@@ -1,5 +1,3 @@
-using ByteBay;
-
 namespace UI_ByteBay
 {
     internal static class Program

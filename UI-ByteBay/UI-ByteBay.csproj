@@ -11,11 +11,8 @@
 
   <ItemGroup>
     <Folder Include="Entidades\" />
-    <Folder Include="UI Entidades\Almacenamiento\" />
-    <Folder Include="UI Entidades\Memorias RAM\" />
     <Folder Include="UI Entidades\Mothers\" />
     <Folder Include="UI Entidades\Periféricos\" />
-    <Folder Include="UI Entidades\Tarjetas gráficas\" />
   </ItemGroup>
 
   <ItemGroup>

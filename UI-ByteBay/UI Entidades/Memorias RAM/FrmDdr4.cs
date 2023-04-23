@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UI_ByteBay.UI_Entidades.Procesadores;
 
-namespace ByteBay.UI_Entidades
+namespace UI_ByteBay.UI_Entidades.Memorias_RAM
 {
-    public partial class AMD : Form
+    public partial class FrmDdr4 : FrmGenerico
     {
-        public AMD()
+        public FrmDdr4()
         {
             InitializeComponent();
+        }
+
+        public override Form CrearFormularioEspecifico()
+        {
+            return new FrmIntel();
         }
     }
 }

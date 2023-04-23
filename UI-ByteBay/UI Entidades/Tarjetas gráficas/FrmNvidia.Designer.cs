@@ -1,6 +1,6 @@
-﻿namespace ByteBay.UI_Entidades
+﻿namespace UI_ByteBay.UI_Entidades.Tarjetas_gráficas
 {
-    partial class AMD
+    partial class FrmNvidia
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuspendLayout();
-            // 
-            // AMD
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoValidate = AutoValidate.EnablePreventFocusChange;
-            ClientSize = new Size(800, 450);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "AMD";
-            StartPosition = FormStartPosition.CenterParent;
-            Text = "AMD";
-            WindowState = FormWindowState.Maximized;
-            ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "FrmNvidia";
         }
 
         #endregion
