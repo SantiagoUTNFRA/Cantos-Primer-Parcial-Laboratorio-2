@@ -18,4 +18,8 @@
     <Folder Include="UI Entidades\Tarjetas gráficas\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Logica\Logica.csproj" />
+  </ItemGroup>
+
 </Project>

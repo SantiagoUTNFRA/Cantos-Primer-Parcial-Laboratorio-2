@@ -31,5 +31,10 @@ namespace UI_ByteBay
 
             amd.Show();
         }
+
+        private void mostrar()
+        {
+            
+        }
     }
 }
