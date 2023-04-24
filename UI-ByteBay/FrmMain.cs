@@ -1,3 +1,4 @@
+using FontAwesome.Sharp;
 using UI_ByteBay.UI_Entidades;
 using UI_ByteBay.UI_Entidades.Almacenamiento;
 using UI_ByteBay.UI_Entidades.Memorias_RAM;
@@ -8,9 +9,13 @@ namespace UI_ByteBay
 {
     public partial class FrmMain : Form
     {
+        bool barraExpandida;
+
         public FrmMain()
         {
             InitializeComponent();
+            btnBarraContenedora.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -117,28 +122,6 @@ namespace UI_ByteBay
 
         #endregion
 
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            MostrarFormulario(new FrmIntel());
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
