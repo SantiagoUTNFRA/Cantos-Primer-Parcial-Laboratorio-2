@@ -60,14 +60,43 @@
             mODOOSCUROToolStripMenuItem = new ToolStripMenuItem();
             mICARRITOToolStripMenuItem = new ToolStripMenuItem();
             mns_header = new MenuStrip();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
+            panel3 = new Panel();
+            iconButton3 = new FontAwesome.Sharp.IconButton();
+            panel4 = new Panel();
+            iconButton4 = new FontAwesome.Sharp.IconButton();
+            panel5 = new Panel();
+            iconButton5 = new FontAwesome.Sharp.IconButton();
+            panel6 = new Panel();
+            iconButton6 = new FontAwesome.Sharp.IconButton();
+            panel7 = new Panel();
+            iconButton7 = new FontAwesome.Sharp.IconButton();
+            panel8 = new Panel();
+            iconButton8 = new FontAwesome.Sharp.IconButton();
+            panel9 = new Panel();
+            iconButton9 = new FontAwesome.Sharp.IconButton();
             mns_header.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            panel5.SuspendLayout();
+            panel6.SuspendLayout();
+            panel7.SuspendLayout();
+            panel8.SuspendLayout();
+            panel9.SuspendLayout();
             SuspendLayout();
             // 
             // tsr_busqueda
             // 
             tsr_busqueda.DropDownItems.AddRange(new ToolStripItem[] { tsc_procesadores, tsc_graficas, tsc_memorias, tsc_almacenamiento, tsc_mother, tsc_perifericos });
             tsr_busqueda.Name = "tsr_busqueda";
-            tsr_busqueda.Size = new Size(170, 20);
+            tsr_busqueda.Size = new Size(163, 19);
             tsr_busqueda.Text = "BÚSQUEDA POR CATEGORÍA";
             // 
             // tsc_procesadores
@@ -259,30 +288,275 @@
             // aRMÁTUPCToolStripMenuItem
             // 
             aRMÁTUPCToolStripMenuItem.Name = "aRMÁTUPCToolStripMenuItem";
-            aRMÁTUPCToolStripMenuItem.Size = new Size(88, 20);
+            aRMÁTUPCToolStripMenuItem.Size = new Size(163, 19);
             aRMÁTUPCToolStripMenuItem.Text = "ARMÁ TU PC";
             // 
             // mODOOSCUROToolStripMenuItem
             // 
             mODOOSCUROToolStripMenuItem.Name = "mODOOSCUROToolStripMenuItem";
-            mODOOSCUROToolStripMenuItem.Size = new Size(106, 20);
+            mODOOSCUROToolStripMenuItem.Size = new Size(163, 19);
             mODOOSCUROToolStripMenuItem.Text = "MODO OSCURO";
             // 
             // mICARRITOToolStripMenuItem
             // 
             mICARRITOToolStripMenuItem.Name = "mICARRITOToolStripMenuItem";
-            mICARRITOToolStripMenuItem.Size = new Size(83, 20);
+            mICARRITOToolStripMenuItem.Size = new Size(163, 19);
             mICARRITOToolStripMenuItem.Text = "MI CARRITO";
             // 
             // mns_header
             // 
             mns_header.BackColor = SystemColors.ControlDark;
+            mns_header.Dock = DockStyle.Right;
             mns_header.Items.AddRange(new ToolStripItem[] { tsr_busqueda, aRMÁTUPCToolStripMenuItem, mODOOSCUROToolStripMenuItem, mICARRITOToolStripMenuItem });
-            mns_header.Location = new Point(0, 0);
+            mns_header.Location = new Point(1074, 0);
             mns_header.Name = "mns_header";
-            mns_header.Size = new Size(1250, 24);
+            mns_header.Size = new Size(176, 692);
             mns_header.TabIndex = 3;
             mns_header.Text = "menuStrip2";
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.BackColor = Color.FromArgb(20, 18, 18);
+            flowLayoutPanel1.Controls.Add(panel1);
+            flowLayoutPanel1.Controls.Add(panel2);
+            flowLayoutPanel1.Controls.Add(panel3);
+            flowLayoutPanel1.Controls.Add(panel4);
+            flowLayoutPanel1.Controls.Add(panel5);
+            flowLayoutPanel1.Controls.Add(panel6);
+            flowLayoutPanel1.Controls.Add(panel7);
+            flowLayoutPanel1.Controls.Add(panel8);
+            flowLayoutPanel1.Controls.Add(panel9);
+            flowLayoutPanel1.Dock = DockStyle.Left;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(212, 692);
+            flowLayoutPanel1.TabIndex = 5;
+            flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(iconButton1);
+            panel1.Location = new Point(3, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(209, 100);
+            panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(iconButton2);
+            panel2.Location = new Point(3, 109);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(209, 63);
+            panel2.TabIndex = 1;
+            // 
+            // iconButton2
+            // 
+            iconButton2.FlatAppearance.BorderSize = 0;
+            iconButton2.FlatStyle = FlatStyle.Flat;
+            iconButton2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            iconButton2.ForeColor = Color.White;
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.House;
+            iconButton2.IconColor = Color.DimGray;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton2.Location = new Point(0, 0);
+            iconButton2.Name = "iconButton2";
+            iconButton2.Size = new Size(209, 63);
+            iconButton2.TabIndex = 0;
+            iconButton2.Text = "Inicio";
+            iconButton2.UseVisualStyleBackColor = true;
+            // 
+            // iconButton1
+            // 
+            iconButton1.FlatAppearance.BorderSize = 0;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            iconButton1.ForeColor = Color.White;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.List;
+            iconButton1.IconColor = Color.DimGray;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton1.Location = new Point(0, 0);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(209, 100);
+            iconButton1.TabIndex = 1;
+            iconButton1.Text = "Menu";
+            iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(iconButton3);
+            panel3.Location = new Point(3, 178);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(209, 63);
+            panel3.TabIndex = 2;
+            // 
+            // iconButton3
+            // 
+            iconButton3.FlatAppearance.BorderSize = 0;
+            iconButton3.FlatStyle = FlatStyle.Flat;
+            iconButton3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            iconButton3.ForeColor = Color.White;
+            iconButton3.IconChar = FontAwesome.Sharp.IconChar.House;
+            iconButton3.IconColor = Color.DimGray;
+            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton3.Location = new Point(0, 0);
+            iconButton3.Name = "iconButton3";
+            iconButton3.Size = new Size(209, 63);
+            iconButton3.TabIndex = 0;
+            iconButton3.Text = "Inicio";
+            iconButton3.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(iconButton4);
+            panel4.Location = new Point(3, 247);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(209, 63);
+            panel4.TabIndex = 3;
+            // 
+            // iconButton4
+            // 
+            iconButton4.FlatAppearance.BorderSize = 0;
+            iconButton4.FlatStyle = FlatStyle.Flat;
+            iconButton4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            iconButton4.ForeColor = Color.White;
+            iconButton4.IconChar = FontAwesome.Sharp.IconChar.House;
+            iconButton4.IconColor = Color.DimGray;
+            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton4.Location = new Point(0, 0);
+            iconButton4.Name = "iconButton4";
+            iconButton4.Size = new Size(209, 63);
+            iconButton4.TabIndex = 0;
+            iconButton4.Text = "Inicio";
+            iconButton4.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(iconButton5);
+            panel5.Location = new Point(3, 316);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(209, 63);
+            panel5.TabIndex = 4;
+            // 
+            // iconButton5
+            // 
+            iconButton5.FlatAppearance.BorderSize = 0;
+            iconButton5.FlatStyle = FlatStyle.Flat;
+            iconButton5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            iconButton5.ForeColor = Color.White;
+            iconButton5.IconChar = FontAwesome.Sharp.IconChar.House;
+            iconButton5.IconColor = Color.DimGray;
+            iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconButton5.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton5.Location = new Point(0, 0);
+            iconButton5.Name = "iconButton5";
+            iconButton5.Size = new Size(209, 63);
+            iconButton5.TabIndex = 0;
+            iconButton5.Text = "Inicio";
+            iconButton5.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(iconButton6);
+            panel6.Location = new Point(3, 385);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(209, 63);
+            panel6.TabIndex = 5;
+            // 
+            // iconButton6
+            // 
+            iconButton6.FlatAppearance.BorderSize = 0;
+            iconButton6.FlatStyle = FlatStyle.Flat;
+            iconButton6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            iconButton6.ForeColor = Color.White;
+            iconButton6.IconChar = FontAwesome.Sharp.IconChar.House;
+            iconButton6.IconColor = Color.DimGray;
+            iconButton6.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconButton6.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton6.Location = new Point(0, 0);
+            iconButton6.Name = "iconButton6";
+            iconButton6.Size = new Size(209, 63);
+            iconButton6.TabIndex = 0;
+            iconButton6.Text = "Inicio";
+            iconButton6.UseVisualStyleBackColor = true;
+            // 
+            // panel7
+            // 
+            panel7.Controls.Add(iconButton7);
+            panel7.Location = new Point(3, 454);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(209, 63);
+            panel7.TabIndex = 6;
+            // 
+            // iconButton7
+            // 
+            iconButton7.FlatAppearance.BorderSize = 0;
+            iconButton7.FlatStyle = FlatStyle.Flat;
+            iconButton7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            iconButton7.ForeColor = Color.White;
+            iconButton7.IconChar = FontAwesome.Sharp.IconChar.House;
+            iconButton7.IconColor = Color.DimGray;
+            iconButton7.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconButton7.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton7.Location = new Point(0, 0);
+            iconButton7.Name = "iconButton7";
+            iconButton7.Size = new Size(209, 63);
+            iconButton7.TabIndex = 0;
+            iconButton7.Text = "Inicio";
+            iconButton7.UseVisualStyleBackColor = true;
+            // 
+            // panel8
+            // 
+            panel8.Controls.Add(iconButton8);
+            panel8.Location = new Point(3, 523);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(209, 63);
+            panel8.TabIndex = 7;
+            // 
+            // iconButton8
+            // 
+            iconButton8.FlatAppearance.BorderSize = 0;
+            iconButton8.FlatStyle = FlatStyle.Flat;
+            iconButton8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            iconButton8.ForeColor = Color.White;
+            iconButton8.IconChar = FontAwesome.Sharp.IconChar.House;
+            iconButton8.IconColor = Color.DimGray;
+            iconButton8.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconButton8.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton8.Location = new Point(0, 0);
+            iconButton8.Name = "iconButton8";
+            iconButton8.Size = new Size(209, 63);
+            iconButton8.TabIndex = 0;
+            iconButton8.Text = "Inicio";
+            iconButton8.UseVisualStyleBackColor = true;
+            // 
+            // panel9
+            // 
+            panel9.Controls.Add(iconButton9);
+            panel9.Location = new Point(3, 592);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(209, 63);
+            panel9.TabIndex = 8;
+            // 
+            // iconButton9
+            // 
+            iconButton9.FlatAppearance.BorderSize = 0;
+            iconButton9.FlatStyle = FlatStyle.Flat;
+            iconButton9.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            iconButton9.ForeColor = Color.White;
+            iconButton9.IconChar = FontAwesome.Sharp.IconChar.House;
+            iconButton9.IconColor = Color.DimGray;
+            iconButton9.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconButton9.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton9.Location = new Point(0, 0);
+            iconButton9.Name = "iconButton9";
+            iconButton9.Size = new Size(209, 63);
+            iconButton9.TabIndex = 0;
+            iconButton9.Text = "Inicio";
+            iconButton9.UseVisualStyleBackColor = true;
             // 
             // FrmMain
             // 
@@ -291,21 +565,32 @@
             BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1250, 692);
+            Controls.Add(flowLayoutPanel1);
             Controls.Add(mns_header);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             Name = "FrmMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Byte Bay";
             WindowState = FormWindowState.Maximized;
             Load += FrmMain_Load;
             mns_header.ResumeLayout(false);
             mns_header.PerformLayout();
+            flowLayoutPanel1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel7.ResumeLayout(false);
+            panel8.ResumeLayout(false);
+            panel9.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private FontAwesome.Sharp.IconButton iconButton1;
         private ToolStripMenuItem tsr_busqueda;
         private ToolStripMenuItem tsc_procesadores;
         private ToolStripMenuItem tsr_intel;
@@ -337,5 +622,24 @@
         private ToolStripMenuItem mODOOSCUROToolStripMenuItem;
         private ToolStripMenuItem mICARRITOToolStripMenuItem;
         private MenuStrip mns_header;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel1;
+        private Panel panel2;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private Panel panel3;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private Panel panel4;
+        private FontAwesome.Sharp.IconButton iconButton4;
+        private Panel panel5;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private Panel panel6;
+        private FontAwesome.Sharp.IconButton iconButton6;
+        private Panel panel7;
+        private FontAwesome.Sharp.IconButton iconButton7;
+        private Panel panel8;
+        private FontAwesome.Sharp.IconButton iconButton8;
+        private Panel panel9;
+        private FontAwesome.Sharp.IconButton iconButton9;
     }
 }
