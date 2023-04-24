@@ -25,7 +25,6 @@ namespace UI_ByteBay
             formularioEspecifico.Show();
         }
 
-        
         #region Mostrar Formularios
         // Procesadores
         private void tsr_intel_Click(object sender, EventArgs e)
@@ -41,7 +40,7 @@ namespace UI_ByteBay
         // Tarjetas gráficas
         private void tsr_nvidia_Click(object sender, EventArgs e)
         {
-           MostrarFormulario(new FrmNvidia());
+            MostrarFormulario(new FrmNvidia());
         }
 
         private void tsr_amdGrafica_Click(object sender, EventArgs e)
@@ -118,6 +117,18 @@ namespace UI_ByteBay
 
         #endregion
 
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            MostrarFormulario(new FrmIntel());
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+        }
     }
 }

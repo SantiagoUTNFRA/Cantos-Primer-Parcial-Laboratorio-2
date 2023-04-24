@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-            mns_header = new MenuStrip();
             tsr_busqueda = new ToolStripMenuItem();
             tsc_procesadores = new ToolStripMenuItem();
             tsr_intel = new ToolStripMenuItem();
@@ -46,11 +45,8 @@
             westernDigitalToolStripMenuItem1 = new ToolStripMenuItem();
             seagateToolStripMenuItem = new ToolStripMenuItem();
             tsc_mother = new ToolStripMenuItem();
-            aTXToolStripMenuItem = new ToolStripMenuItem();
-            miniATXToolStripMenuItem = new ToolStripMenuItem();
-            nanoATXToolStripMenuItem = new ToolStripMenuItem();
-            picoATXToolStripMenuItem = new ToolStripMenuItem();
-            iTXToolStripMenuItem = new ToolStripMenuItem();
+            str_AmdMother = new ToolStripMenuItem();
+            str_IntelMother = new ToolStripMenuItem();
             tsc_perifericos = new ToolStripMenuItem();
             tsr_teclados = new ToolStripMenuItem();
             tsr_auriculares = new ToolStripMenuItem();
@@ -63,18 +59,9 @@
             aRMÁTUPCToolStripMenuItem = new ToolStripMenuItem();
             mODOOSCUROToolStripMenuItem = new ToolStripMenuItem();
             mICARRITOToolStripMenuItem = new ToolStripMenuItem();
+            mns_header = new MenuStrip();
             mns_header.SuspendLayout();
             SuspendLayout();
-            // 
-            // mns_header
-            // 
-            mns_header.BackColor = SystemColors.ControlDark;
-            mns_header.Items.AddRange(new ToolStripItem[] { tsr_busqueda, aRMÁTUPCToolStripMenuItem, mODOOSCUROToolStripMenuItem, mICARRITOToolStripMenuItem });
-            mns_header.Location = new Point(0, 0);
-            mns_header.Name = "mns_header";
-            mns_header.Size = new Size(1250, 24);
-            mns_header.TabIndex = 3;
-            mns_header.Text = "menuStrip2";
             // 
             // tsr_busqueda
             // 
@@ -88,7 +75,7 @@
             tsc_procesadores.BackColor = SystemColors.InactiveCaption;
             tsc_procesadores.DropDownItems.AddRange(new ToolStripItem[] { tsr_intel, tsr_amdProcesador });
             tsc_procesadores.Name = "tsc_procesadores";
-            tsc_procesadores.Size = new Size(180, 22);
+            tsc_procesadores.Size = new Size(165, 22);
             tsc_procesadores.Text = "Procesadores";
             tsc_procesadores.TextAlign = ContentAlignment.TopCenter;
             // 
@@ -111,7 +98,7 @@
             tsc_graficas.BackColor = SystemColors.InactiveCaption;
             tsc_graficas.DropDownItems.AddRange(new ToolStripItem[] { tsr_nvidia, tsr_amdGrafica });
             tsc_graficas.Name = "tsc_graficas";
-            tsc_graficas.Size = new Size(180, 22);
+            tsc_graficas.Size = new Size(165, 22);
             tsc_graficas.Text = "Tarjetas gráficas";
             // 
             // tsr_nvidia
@@ -133,7 +120,7 @@
             tsc_memorias.BackColor = SystemColors.InactiveCaption;
             tsc_memorias.DropDownItems.AddRange(new ToolStripItem[] { tsr_ddr4, tsr_ddr5 });
             tsc_memorias.Name = "tsc_memorias";
-            tsc_memorias.Size = new Size(180, 22);
+            tsc_memorias.Size = new Size(165, 22);
             tsc_memorias.Text = "Memorias";
             // 
             // tsr_ddr4
@@ -155,7 +142,7 @@
             tsc_almacenamiento.BackColor = SystemColors.InactiveCaption;
             tsc_almacenamiento.DropDownItems.AddRange(new ToolStripItem[] { tsr_ssd, tsr_hdd });
             tsc_almacenamiento.Name = "tsc_almacenamiento";
-            tsc_almacenamiento.Size = new Size(180, 22);
+            tsc_almacenamiento.Size = new Size(165, 22);
             tsc_almacenamiento.Text = "Almacenamiento";
             // 
             // tsr_ssd
@@ -188,102 +175,84 @@
             // tsc_mother
             // 
             tsc_mother.BackColor = SystemColors.InactiveCaption;
-            tsc_mother.DropDownItems.AddRange(new ToolStripItem[] { aTXToolStripMenuItem, miniATXToolStripMenuItem, nanoATXToolStripMenuItem, picoATXToolStripMenuItem, iTXToolStripMenuItem });
+            tsc_mother.DropDownItems.AddRange(new ToolStripItem[] { str_AmdMother, str_IntelMother });
             tsc_mother.Name = "tsc_mother";
-            tsc_mother.Size = new Size(180, 22);
+            tsc_mother.Size = new Size(165, 22);
             tsc_mother.Text = "Mother";
             // 
-            // aTXToolStripMenuItem
+            // str_AmdMother
             // 
-            aTXToolStripMenuItem.Name = "aTXToolStripMenuItem";
-            aTXToolStripMenuItem.Size = new Size(128, 22);
-            aTXToolStripMenuItem.Text = "ATX";
+            str_AmdMother.Name = "str_AmdMother";
+            str_AmdMother.Size = new Size(101, 22);
+            str_AmdMother.Text = "AMD";
             // 
-            // miniATXToolStripMenuItem
+            // str_IntelMother
             // 
-            miniATXToolStripMenuItem.Name = "miniATXToolStripMenuItem";
-            miniATXToolStripMenuItem.Size = new Size(128, 22);
-            miniATXToolStripMenuItem.Text = "Mini-ATX";
-            // 
-            // nanoATXToolStripMenuItem
-            // 
-            nanoATXToolStripMenuItem.Name = "nanoATXToolStripMenuItem";
-            nanoATXToolStripMenuItem.Size = new Size(128, 22);
-            nanoATXToolStripMenuItem.Text = "Nano-ATX";
-            // 
-            // picoATXToolStripMenuItem
-            // 
-            picoATXToolStripMenuItem.Name = "picoATXToolStripMenuItem";
-            picoATXToolStripMenuItem.Size = new Size(128, 22);
-            picoATXToolStripMenuItem.Text = "Pico-ATX";
-            // 
-            // iTXToolStripMenuItem
-            // 
-            iTXToolStripMenuItem.Name = "iTXToolStripMenuItem";
-            iTXToolStripMenuItem.Size = new Size(128, 22);
-            iTXToolStripMenuItem.Text = "ITX";
+            str_IntelMother.Name = "str_IntelMother";
+            str_IntelMother.Size = new Size(101, 22);
+            str_IntelMother.Text = "Intel";
             // 
             // tsc_perifericos
             // 
             tsc_perifericos.BackColor = SystemColors.InactiveCaption;
             tsc_perifericos.DropDownItems.AddRange(new ToolStripItem[] { tsr_teclados, tsr_auriculares, tsr_mouse, tsr_parlantes, tsr_microfonos, tsr_sillas, tsr_camaras, tsr_monitores });
             tsc_perifericos.Name = "tsc_perifericos";
-            tsc_perifericos.Size = new Size(180, 22);
+            tsc_perifericos.Size = new Size(165, 22);
             tsc_perifericos.Text = "Periféricos";
             // 
             // tsr_teclados
             // 
             tsr_teclados.Name = "tsr_teclados";
-            tsr_teclados.Size = new Size(180, 22);
+            tsr_teclados.Size = new Size(135, 22);
             tsr_teclados.Text = "Teclados";
             tsr_teclados.Click += tsr_teclados_Click;
             // 
             // tsr_auriculares
             // 
             tsr_auriculares.Name = "tsr_auriculares";
-            tsr_auriculares.Size = new Size(180, 22);
+            tsr_auriculares.Size = new Size(135, 22);
             tsr_auriculares.Text = "Auriculares";
             tsr_auriculares.Click += tsr_auriculares_Click;
             // 
             // tsr_mouse
             // 
             tsr_mouse.Name = "tsr_mouse";
-            tsr_mouse.Size = new Size(180, 22);
+            tsr_mouse.Size = new Size(135, 22);
             tsr_mouse.Text = "Mouse";
             tsr_mouse.Click += tsr_mouse_Click;
             // 
             // tsr_parlantes
             // 
             tsr_parlantes.Name = "tsr_parlantes";
-            tsr_parlantes.Size = new Size(180, 22);
+            tsr_parlantes.Size = new Size(135, 22);
             tsr_parlantes.Text = "Parlantes";
             tsr_parlantes.Click += tsr_parlantes_Click;
             // 
             // tsr_microfonos
             // 
             tsr_microfonos.Name = "tsr_microfonos";
-            tsr_microfonos.Size = new Size(180, 22);
+            tsr_microfonos.Size = new Size(135, 22);
             tsr_microfonos.Text = "Microfonos";
             tsr_microfonos.Click += tsr_microfonos_Click;
             // 
             // tsr_sillas
             // 
             tsr_sillas.Name = "tsr_sillas";
-            tsr_sillas.Size = new Size(180, 22);
+            tsr_sillas.Size = new Size(135, 22);
             tsr_sillas.Text = "Sillas";
             tsr_sillas.Click += tsr_sillas_Click;
             // 
             // tsr_camaras
             // 
             tsr_camaras.Name = "tsr_camaras";
-            tsr_camaras.Size = new Size(180, 22);
+            tsr_camaras.Size = new Size(135, 22);
             tsr_camaras.Text = "Cámaras";
             tsr_camaras.Click += tsr_camaras_Click;
             // 
             // tsr_monitores
             // 
             tsr_monitores.Name = "tsr_monitores";
-            tsr_monitores.Size = new Size(180, 22);
+            tsr_monitores.Size = new Size(135, 22);
             tsr_monitores.Text = "Monitores";
             tsr_monitores.Click += tsr_monitores_Click;
             // 
@@ -305,10 +274,21 @@
             mICARRITOToolStripMenuItem.Size = new Size(83, 20);
             mICARRITOToolStripMenuItem.Text = "MI CARRITO";
             // 
+            // mns_header
+            // 
+            mns_header.BackColor = SystemColors.ControlDark;
+            mns_header.Items.AddRange(new ToolStripItem[] { tsr_busqueda, aRMÁTUPCToolStripMenuItem, mODOOSCUROToolStripMenuItem, mICARRITOToolStripMenuItem });
+            mns_header.Location = new Point(0, 0);
+            mns_header.Name = "mns_header";
+            mns_header.Size = new Size(1250, 24);
+            mns_header.TabIndex = 3;
+            mns_header.Text = "menuStrip2";
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1250, 692);
             Controls.Add(mns_header);
@@ -325,32 +305,26 @@
         }
 
         #endregion
-        private MenuStrip mns_header;
+        private FontAwesome.Sharp.IconButton iconButton1;
         private ToolStripMenuItem tsr_busqueda;
         private ToolStripMenuItem tsc_procesadores;
-        private ToolStripMenuItem tsc_graficas;
-        private ToolStripMenuItem tsc_memorias;
-        private ToolStripMenuItem aRMÁTUPCToolStripMenuItem;
-        private ToolStripMenuItem mODOOSCUROToolStripMenuItem;
-        private ToolStripMenuItem mICARRITOToolStripMenuItem;
         private ToolStripMenuItem tsr_intel;
         private ToolStripMenuItem tsr_amdProcesador;
+        private ToolStripMenuItem tsc_graficas;
         private ToolStripMenuItem tsr_nvidia;
         private ToolStripMenuItem tsr_amdGrafica;
-        private ToolStripMenuItem tsc_almacenamiento;
-        private ToolStripMenuItem tsc_mother;
-        private ToolStripMenuItem tsc_perifericos;
+        private ToolStripMenuItem tsc_memorias;
         private ToolStripMenuItem tsr_ddr4;
         private ToolStripMenuItem tsr_ddr5;
+        private ToolStripMenuItem tsc_almacenamiento;
         private ToolStripMenuItem tsr_ssd;
         private ToolStripMenuItem tsr_hdd;
         private ToolStripMenuItem westernDigitalToolStripMenuItem1;
         private ToolStripMenuItem seagateToolStripMenuItem;
-        private ToolStripMenuItem aTXToolStripMenuItem;
-        private ToolStripMenuItem miniATXToolStripMenuItem;
-        private ToolStripMenuItem nanoATXToolStripMenuItem;
-        private ToolStripMenuItem picoATXToolStripMenuItem;
-        private ToolStripMenuItem iTXToolStripMenuItem;
+        private ToolStripMenuItem tsc_mother;
+        private ToolStripMenuItem str_AmdMother;
+        private ToolStripMenuItem str_IntelMother;
+        private ToolStripMenuItem tsc_perifericos;
         private ToolStripMenuItem tsr_teclados;
         private ToolStripMenuItem tsr_auriculares;
         private ToolStripMenuItem tsr_mouse;
@@ -359,5 +333,9 @@
         private ToolStripMenuItem tsr_sillas;
         private ToolStripMenuItem tsr_camaras;
         private ToolStripMenuItem tsr_monitores;
+        private ToolStripMenuItem aRMÁTUPCToolStripMenuItem;
+        private ToolStripMenuItem mODOOSCUROToolStripMenuItem;
+        private ToolStripMenuItem mICARRITOToolStripMenuItem;
+        private MenuStrip mns_header;
     }
 }
