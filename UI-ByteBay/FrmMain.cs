@@ -1,127 +1,74 @@
 using FontAwesome.Sharp;
-using UI_ByteBay.UI_Entidades;
-using UI_ByteBay.UI_Entidades.Almacenamiento;
-using UI_ByteBay.UI_Entidades.Memorias_RAM;
-using UI_ByteBay.UI_Entidades.Procesadores;
-using UI_ByteBay.UI_Entidades.Tarjetas_gráficas;
 
 namespace UI_ByteBay
 {
     public partial class FrmMain : Form
     {
-        bool barraExpandida;
+        private int menuWidth;
+        private int iconWidth;
+        private bool estaColapsado;
+        private Login loginForm;
+
 
         public FrmMain()
         {
             InitializeComponent();
-            btnBarraContenedora.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            this.loginForm = loginForm;
 
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
             IsMdiContainer = true;
+            menuWidth = flpContenedor.Width;
+            iconWidth = pnlInicio.Width;
+            estaColapsado = false;
         }
 
-        private void MostrarFormulario(FrmGenerico formulario)
+        private void btnMenu_Click(object sender, EventArgs e)
         {
-            var formularioEspecifico = formulario.CrearFormularioEspecifico();
-            formularioEspecifico.MdiParent = this;
-            formularioEspecifico.Show();
+            flpContenedor.Size = estaColapsado ? new Size(menuWidth, flpContenedor.Height) : new Size(iconWidth, flpContenedor.Height);
+            btnMenu.IconChar = estaColapsado ? IconChar.Bars : IconChar.Times;
+            btnMenu.Text = estaColapsado ? "" : "Menú";
+            estaColapsado = !estaColapsado;
         }
 
-        #region Mostrar Formularios
-        // Procesadores
-        private void tsr_intel_Click(object sender, EventArgs e)
+        private void btnCategorias_Click(object sender, EventArgs e)
         {
-            MostrarFormulario(new FrmIntel());
+            FrmCategorias frmCategorias = new()
+            {
+                FormBorderStyle = FormBorderStyle.None,
+                WindowState = FormWindowState.Maximized,
+                StartPosition = FormStartPosition.Manual,
+                ControlBox = false,
+                MaximizeBox = false,
+                MinimizeBox = false,
+                ShowInTaskbar = false,
+                ShowIcon = false,
+                MdiParent = this
+            };
+            frmCategorias.Show();
         }
 
-        private void tsr_amdProcesador_Click(object sender, EventArgs e)
-        {
-            MostrarFormulario(new FrmAMD());
-        }
-
-        // Tarjetas gráficas
-        private void tsr_nvidia_Click(object sender, EventArgs e)
-        {
-            MostrarFormulario(new FrmNvidia());
-        }
-
-        private void tsr_amdGrafica_Click(object sender, EventArgs e)
-        {
-            MostrarFormulario(new FrmAMDGrafica());
-        }
-
-        // Memorias
-        private void tsr_ddr4_Click(object sender, EventArgs e)
-        {
-            MostrarFormulario(new FrmDdr4());
-
-        }
-
-        private void tsr_ddr5_Click(object sender, EventArgs e)
-        {
-            MostrarFormulario(new FrmDdr5());
-        }
-
-        // Almacenamiento
-        private void tsr_ssd_Click(object sender, EventArgs e)
-        {
-            MostrarFormulario(new FrmSsd());
-        }
-
-        private void tsr_hdd_Click(object sender, EventArgs e)
-        {
-            MostrarFormulario(new FrmHdd());
-        }
-
-        // Mother
-
-        // Perifericos
-        private void tsr_teclados_Click(object sender, EventArgs e)
+        private void btnInicio_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void tsr_auriculares_Click(object sender, EventArgs e)
+        private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            App.LoginFormInstance.Show();
         }
 
-        private void tsr_mouse_Click(object sender, EventArgs e)
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
 
+            App.LoginFormInstance.Show();
         }
+    }
 
-        private void tsr_parlantes_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tsr_microfonos_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tsr_sillas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tsr_camaras_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tsr_monitores_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        #endregion
-
-
+    public static class App
+    {
+        public static Login LoginFormInstance { get; set; }
     }
 }
