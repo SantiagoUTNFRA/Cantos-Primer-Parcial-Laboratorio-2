@@ -1,4 +1,5 @@
 using FontAwesome.Sharp;
+using UI_ByteBay.Forms;
 
 namespace UI_ByteBay
 {
@@ -11,8 +12,15 @@ namespace UI_ByteBay
         //Variables para verificar su estado y no volver a abrir el mismo formulario
         private Dictionary<Type, Form> formularios = new Dictionary<Type, Form>();
         private Form formularioActual = null!;
-        private FrmInicio frmInicio;
-        private FrmCategorias frmCategorias;
+
+        private readonly FrmInicio frmInicio;
+        private readonly FrmCategorias frmCategorias;
+        private readonly FrmMiCarrito frmMiCarrito;
+        private readonly FrmNosotros frmNosotros;
+        private readonly FrmAdministrador frmAdministrador;
+        private readonly FrmArmaTuPc frmArmaTuPc;
+        private readonly FrmContactanos frmContactanos;
+
 
         public FrmMain()
         {
@@ -24,6 +32,26 @@ namespace UI_ByteBay
             };
 
             frmCategorias = new FrmCategorias
+            {
+                MdiParent = this
+            };
+
+            frmMiCarrito = new FrmMiCarrito
+            {
+                MdiParent = this
+            };
+
+            frmNosotros = new FrmNosotros
+            {
+                MdiParent = this
+            };
+
+            frmAdministrador = new FrmAdministrador
+            {
+                MdiParent = this
+            };
+
+            frmArmaTuPc = new FrmArmaTuPc
             {
                 MdiParent = this
             };
@@ -57,11 +85,34 @@ namespace UI_ByteBay
             MostrarFormulario(frmCategorias);
         }
 
-        
-
-        private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        private void btnArmarPc_Click(object sender, EventArgs e)
         {
-            App.LoginFormInstance.Show();
+            MostrarFormulario(frmArmaTuPc);
+        }
+
+        private void btnModoOscuro_Click(object sender, EventArgs e)
+        {
+            //REALIZAR METODO DE MODO OSCURO
+        }
+
+        private void btnMiCarrito_Click(object sender, EventArgs e)
+        {
+            MostrarFormulario(frmMiCarrito);
+        }
+
+        private void btnContactanos_Click(object sender, EventArgs e)
+        {
+            MostrarFormulario(frmContactanos);
+        }
+
+        private void btnNosotros_Click(object sender, EventArgs e)
+        {
+            MostrarFormulario(frmNosotros);
+        }
+
+        private void btnAdministrador_Click(object sender, EventArgs e)
+        {
+            MostrarFormulario(frmAdministrador);
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
@@ -70,9 +121,17 @@ namespace UI_ByteBay
             App.LoginFormInstance.Show();
         }
 
+        #region EVENTOS
+        //EVENTOS
+        private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            App.LoginFormInstance.Show();
+        }
 
-        
+        #endregion
 
+        #region METODOS
+        //METODOS
         private void MostrarFormulario(Form formulario)
         {
             if (formulario == null) return;
@@ -104,8 +163,8 @@ namespace UI_ByteBay
             }
         }
 
+        #endregion
+
 
     }
-
-
 }

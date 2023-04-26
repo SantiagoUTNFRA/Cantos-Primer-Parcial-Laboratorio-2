@@ -48,9 +48,9 @@
             btnNosotros = new FontAwesome.Sharp.IconButton();
             pnlVacioUno = new Panel();
             pnlVacioDos = new Panel();
+            btnAdministrador = new FontAwesome.Sharp.IconButton();
             pnlCerrarSesion = new Panel();
             btnCerrarSesion = new FontAwesome.Sharp.IconButton();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
             flpContenedor.SuspendLayout();
             pnlMenu.SuspendLayout();
             pnlInicio.SuspendLayout();
@@ -82,7 +82,7 @@
             flpContenedor.Location = new Point(0, 0);
             flpContenedor.Margin = new Padding(3, 4, 3, 4);
             flpContenedor.Name = "flpContenedor";
-            flpContenedor.Size = new Size(72, 1061);
+            flpContenedor.Size = new Size(256, 1061);
             flpContenedor.TabIndex = 5;
             // 
             // pnlMenu
@@ -200,6 +200,7 @@
             btnArmarPc.TabIndex = 0;
             btnArmarPc.Text = "Armá tu PC";
             btnArmarPc.UseVisualStyleBackColor = true;
+            btnArmarPc.Click += btnArmarPc_Click;
             // 
             // pnlModoOscuro
             // 
@@ -228,6 +229,7 @@
             btnModoOscuro.TabIndex = 0;
             btnModoOscuro.Text = "Modo oscuro";
             btnModoOscuro.UseVisualStyleBackColor = true;
+            btnModoOscuro.Click += btnModoOscuro_Click;
             // 
             // pnlMiCarrito
             // 
@@ -256,6 +258,7 @@
             btnMiCarrito.TabIndex = 0;
             btnMiCarrito.Text = "Mi carrito";
             btnMiCarrito.UseVisualStyleBackColor = true;
+            btnMiCarrito.Click += btnMiCarrito_Click;
             // 
             // pnlContactanos
             // 
@@ -284,6 +287,7 @@
             btnContactanos.TabIndex = 0;
             btnContactanos.Text = "Contáctanos";
             btnContactanos.UseVisualStyleBackColor = true;
+            btnContactanos.Click += btnContactanos_Click;
             // 
             // pnlNosotros
             // 
@@ -312,6 +316,7 @@
             btnNosotros.TabIndex = 0;
             btnNosotros.Text = "Nosotros";
             btnNosotros.UseVisualStyleBackColor = true;
+            btnNosotros.Click += btnNosotros_Click;
             // 
             // pnlVacioUno
             // 
@@ -324,12 +329,32 @@
             // 
             // pnlVacioDos
             // 
-            pnlVacioDos.Controls.Add(iconButton1);
+            pnlVacioDos.Controls.Add(btnAdministrador);
             pnlVacioDos.Location = new Point(3, 763);
             pnlVacioDos.Margin = new Padding(3, 4, 3, 4);
             pnlVacioDos.Name = "pnlVacioDos";
             pnlVacioDos.Size = new Size(239, 80);
             pnlVacioDos.TabIndex = 9;
+            // 
+            // btnAdministrador
+            // 
+            btnAdministrador.Dock = DockStyle.Left;
+            btnAdministrador.FlatAppearance.BorderSize = 0;
+            btnAdministrador.FlatStyle = FlatStyle.Flat;
+            btnAdministrador.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAdministrador.ForeColor = Color.White;
+            btnAdministrador.IconChar = FontAwesome.Sharp.IconChar.UserShield;
+            btnAdministrador.IconColor = Color.DimGray;
+            btnAdministrador.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            btnAdministrador.ImageAlign = ContentAlignment.MiddleLeft;
+            btnAdministrador.Location = new Point(0, 0);
+            btnAdministrador.Margin = new Padding(3, 4, 3, 4);
+            btnAdministrador.Name = "btnAdministrador";
+            btnAdministrador.Size = new Size(239, 80);
+            btnAdministrador.TabIndex = 1;
+            btnAdministrador.Text = "Administrador";
+            btnAdministrador.UseVisualStyleBackColor = true;
+            btnAdministrador.Click += btnAdministrador_Click;
             // 
             // pnlCerrarSesion
             // 
@@ -360,25 +385,6 @@
             btnCerrarSesion.UseVisualStyleBackColor = true;
             btnCerrarSesion.Click += btnCerrarSesion_Click;
             // 
-            // iconButton1
-            // 
-            iconButton1.Dock = DockStyle.Left;
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            iconButton1.ForeColor = Color.White;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.UserShield;
-            iconButton1.IconColor = Color.DimGray;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton1.Location = new Point(0, 0);
-            iconButton1.Margin = new Padding(3, 4, 3, 4);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(239, 80);
-            iconButton1.TabIndex = 1;
-            iconButton1.Text = "Administrador";
-            iconButton1.UseVisualStyleBackColor = true;
-            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -394,7 +400,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "d";
             WindowState = FormWindowState.Maximized;
-            FormClosed += FrmMain_FormClosed;
             Load += FrmMain_Load;
             flpContenedor.ResumeLayout(false);
             pnlMenu.ResumeLayout(false);
@@ -433,6 +438,6 @@
         private Panel pnlCerrarSesion;
         private FontAwesome.Sharp.IconButton btnCerrarSesion;
         private Panel pnlVacioDos;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnAdministrador;
     }
 }
