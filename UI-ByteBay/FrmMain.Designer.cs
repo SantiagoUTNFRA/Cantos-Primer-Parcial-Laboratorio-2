@@ -50,6 +50,7 @@
             pnlVacioDos = new Panel();
             pnlCerrarSesion = new Panel();
             btnCerrarSesion = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             flpContenedor.SuspendLayout();
             pnlMenu.SuspendLayout();
             pnlInicio.SuspendLayout();
@@ -59,6 +60,7 @@
             pnlMiCarrito.SuspendLayout();
             pnlContactanos.SuspendLayout();
             pnlNosotros.SuspendLayout();
+            pnlVacioDos.SuspendLayout();
             pnlCerrarSesion.SuspendLayout();
             SuspendLayout();
             // 
@@ -322,6 +324,7 @@
             // 
             // pnlVacioDos
             // 
+            pnlVacioDos.Controls.Add(iconButton1);
             pnlVacioDos.Location = new Point(3, 763);
             pnlVacioDos.Margin = new Padding(3, 4, 3, 4);
             pnlVacioDos.Name = "pnlVacioDos";
@@ -357,6 +360,25 @@
             btnCerrarSesion.UseVisualStyleBackColor = true;
             btnCerrarSesion.Click += btnCerrarSesion_Click;
             // 
+            // iconButton1
+            // 
+            iconButton1.Dock = DockStyle.Left;
+            iconButton1.FlatAppearance.BorderSize = 0;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            iconButton1.ForeColor = Color.White;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.UserShield;
+            iconButton1.IconColor = Color.DimGray;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton1.Location = new Point(0, 0);
+            iconButton1.Margin = new Padding(3, 4, 3, 4);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(239, 80);
+            iconButton1.TabIndex = 1;
+            iconButton1.Text = "Administrador";
+            iconButton1.UseVisualStyleBackColor = true;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -383,6 +405,7 @@
             pnlMiCarrito.ResumeLayout(false);
             pnlContactanos.ResumeLayout(false);
             pnlNosotros.ResumeLayout(false);
+            pnlVacioDos.ResumeLayout(false);
             pnlCerrarSesion.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -410,5 +433,6 @@
         private Panel pnlCerrarSesion;
         private FontAwesome.Sharp.IconButton btnCerrarSesion;
         private Panel pnlVacioDos;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

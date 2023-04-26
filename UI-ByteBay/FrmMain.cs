@@ -7,14 +7,26 @@ namespace UI_ByteBay
         private int menuWidth;
         private int iconWidth;
         private bool estaColapsado;
-        private Login loginForm;
 
+        //Variables para verificar su estado y no volver a abrir el mismo formulario
+        private Dictionary<Type, Form> formularios = new Dictionary<Type, Form>();
+        private Form formularioActual = null!;
+        private FrmInicio frmInicio;
+        private FrmCategorias frmCategorias;
 
         public FrmMain()
         {
             InitializeComponent();
-            this.loginForm = loginForm;
 
+            frmInicio = new FrmInicio
+            {
+                MdiParent = this
+            };
+
+            frmCategorias = new FrmCategorias
+            {
+                MdiParent = this
+            };
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -23,6 +35,8 @@ namespace UI_ByteBay
             menuWidth = flpContenedor.Width;
             iconWidth = pnlInicio.Width;
             estaColapsado = false;
+
+            MostrarFormulario(frmInicio);
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -33,27 +47,17 @@ namespace UI_ByteBay
             estaColapsado = !estaColapsado;
         }
 
-        private void btnCategorias_Click(object sender, EventArgs e)
-        {
-            FrmCategorias frmCategorias = new()
-            {
-                FormBorderStyle = FormBorderStyle.None,
-                WindowState = FormWindowState.Maximized,
-                StartPosition = FormStartPosition.Manual,
-                ControlBox = false,
-                MaximizeBox = false,
-                MinimizeBox = false,
-                ShowInTaskbar = false,
-                ShowIcon = false,
-                MdiParent = this
-            };
-            frmCategorias.Show();
-        }
-
         private void btnInicio_Click(object sender, EventArgs e)
         {
-
+            MostrarFormulario(frmInicio);
         }
+
+        private void btnCategorias_Click(object sender, EventArgs e)
+        {
+            MostrarFormulario(frmCategorias);
+        }
+
+        
 
         private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -62,13 +66,46 @@ namespace UI_ByteBay
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-
+            this.Close();
             App.LoginFormInstance.Show();
         }
+
+
+        
+
+        private void MostrarFormulario(Form formulario)
+        {
+            if (formulario == null) return;
+
+            Type tipoFormulario = formulario.GetType();
+            if (formularios.ContainsKey(tipoFormulario))
+            {
+                Form instanciaFormulario = formularios[tipoFormulario];
+                instanciaFormulario.MdiParent = this;
+                OcultarFormularioActual(); // oculta el formulario actual
+                instanciaFormulario.Show();
+                formularioActual = instanciaFormulario;
+            }
+            else
+            {
+                formulario.MdiParent = this;
+                OcultarFormularioActual(); // oculta el formulario actual
+                formulario.Show();
+                formularios.Add(tipoFormulario, formulario);
+                formularioActual = formulario;
+            }
+        }
+
+        private void OcultarFormularioActual()
+        {
+            if (formularioActual != null)
+            {
+                formularioActual.Hide();
+            }
+        }
+
+
     }
 
-    public static class App
-    {
-        public static Login LoginFormInstance { get; set; }
-    }
+
 }

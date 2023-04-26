@@ -30,4 +30,9 @@ namespace UI_ByteBay
             }
         }
     }
+
+    public static class App
+    {
+        public static Login LoginFormInstance { get; set; }
+    }
 }

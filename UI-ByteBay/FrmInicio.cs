@@ -1,8 +1,18 @@
-﻿namespace UI_ByteBay
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace UI_ByteBay
 {
-    public partial class FrmCategorias : Form
+    public partial class FrmInicio : Form
     {
-        public FrmCategorias()
+        public FrmInicio()
         {
             InitializeComponent();
 
@@ -16,7 +26,7 @@
             ShowIcon = false;
         }
 
-        private void FrmCategorias_Load(object sender, EventArgs e)
+        private void FrmInicio_Load(object sender, EventArgs e)
         {
 
         }
