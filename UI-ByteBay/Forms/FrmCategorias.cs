@@ -18,7 +18,12 @@
 
         private void FrmCategorias_Load(object sender, EventArgs e)
         {
-
+            // Agregar elementos al control ListView
+            ListViewItem item = new ListViewItem("Procesadores");
+            item.SubItems.Add("Intel");
+            item.SubItems.Add("$300");
+            item.SubItems.Add("5");
+            lvwCategoria.Items.Add(item);
         }
     }
 }

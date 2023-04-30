@@ -28,18 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            lblTEST = new Label();
             SuspendLayout();
             // 
-            // button1
+            // lblTEST
             // 
-            button1.Dock = DockStyle.Bottom;
-            button1.Location = new Point(0, 226);
-            button1.Name = "button1";
-            button1.Size = new Size(800, 224);
-            button1.TabIndex = 0;
-            button1.Text = "principal";
-            button1.UseVisualStyleBackColor = true;
+            lblTEST.AutoSize = true;
+            lblTEST.Location = new Point(372, 166);
+            lblTEST.Name = "lblTEST";
+            lblTEST.Size = new Size(38, 15);
+            lblTEST.TabIndex = 0;
+            lblTEST.Text = "label1";
             // 
             // FrmInicio
             // 
@@ -47,16 +46,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ScrollBar;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(lblTEST);
             ForeColor = SystemColors.ControlText;
             Name = "FrmInicio";
             Text = "FrmInicio";
             Load += FrmInicio_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private TreeView treeView1;
+        private Label lblTEST;
     }
 }

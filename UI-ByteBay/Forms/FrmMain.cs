@@ -164,7 +164,10 @@ namespace UI_ByteBay
         }
 
         #endregion
+    }
 
-
+    public static class App
+    {
+        public static Login LoginFormInstance { get; set; }
     }
 }

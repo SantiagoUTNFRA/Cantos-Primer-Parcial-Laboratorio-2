@@ -51,6 +51,8 @@
             btnAdministrador = new FontAwesome.Sharp.IconButton();
             pnlCerrarSesion = new Panel();
             btnCerrarSesion = new FontAwesome.Sharp.IconButton();
+            panel1 = new Panel();
+            btnUser = new FontAwesome.Sharp.IconButton();
             flpContenedor.SuspendLayout();
             pnlMenu.SuspendLayout();
             pnlInicio.SuspendLayout();
@@ -62,6 +64,7 @@
             pnlNosotros.SuspendLayout();
             pnlVacioDos.SuspendLayout();
             pnlCerrarSesion.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // flpContenedor
@@ -82,7 +85,7 @@
             flpContenedor.Location = new Point(0, 0);
             flpContenedor.Margin = new Padding(3, 4, 3, 4);
             flpContenedor.Name = "flpContenedor";
-            flpContenedor.Size = new Size(256, 1061);
+            flpContenedor.Size = new Size(63, 957);
             flpContenedor.TabIndex = 5;
             // 
             // pnlMenu
@@ -385,12 +388,42 @@
             btnCerrarSesion.UseVisualStyleBackColor = true;
             btnCerrarSesion.Click += btnCerrarSesion_Click;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(20, 18, 18);
+            panel1.Controls.Add(btnUser);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(63, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1403, 103);
+            panel1.TabIndex = 7;
+            // 
+            // btnUser
+            // 
+            btnUser.Dock = DockStyle.Left;
+            btnUser.FlatAppearance.BorderSize = 0;
+            btnUser.FlatStyle = FlatStyle.Flat;
+            btnUser.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUser.ForeColor = Color.White;
+            btnUser.IconChar = FontAwesome.Sharp.IconChar.User;
+            btnUser.IconColor = Color.DimGray;
+            btnUser.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            btnUser.ImageAlign = ContentAlignment.MiddleLeft;
+            btnUser.Location = new Point(0, 0);
+            btnUser.Margin = new Padding(3, 4, 3, 4);
+            btnUser.Name = "btnUser";
+            btnUser.Size = new Size(239, 103);
+            btnUser.TabIndex = 6;
+            btnUser.Tag = "";
+            btnUser.UseVisualStyleBackColor = true;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
-            ClientSize = new Size(1423, 1061);
+            ClientSize = new Size(1466, 957);
+            Controls.Add(panel1);
             Controls.Add(flpContenedor);
             Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -398,7 +431,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "FrmMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "d";
+            Text = "Byte Bay";
             WindowState = FormWindowState.Maximized;
             Load += FrmMain_Load;
             flpContenedor.ResumeLayout(false);
@@ -412,6 +445,7 @@
             pnlNosotros.ResumeLayout(false);
             pnlVacioDos.ResumeLayout(false);
             pnlCerrarSesion.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -439,5 +473,7 @@
         private FontAwesome.Sharp.IconButton btnCerrarSesion;
         private Panel pnlVacioDos;
         private FontAwesome.Sharp.IconButton btnAdministrador;
+        private Panel panel1;
+        private FontAwesome.Sharp.IconButton btnUser;
     }
 }

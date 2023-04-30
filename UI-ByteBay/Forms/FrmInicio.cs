@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logica_de_Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,7 +29,7 @@ namespace UI_ByteBay
 
         private void FrmInicio_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
