@@ -85,7 +85,7 @@
             flpContenedor.Location = new Point(0, 0);
             flpContenedor.Margin = new Padding(3, 4, 3, 4);
             flpContenedor.Name = "flpContenedor";
-            flpContenedor.Size = new Size(63, 957);
+            flpContenedor.Size = new Size(64, 747);
             flpContenedor.TabIndex = 5;
             // 
             // pnlMenu
@@ -94,7 +94,7 @@
             pnlMenu.Location = new Point(3, 4);
             pnlMenu.Margin = new Padding(3, 4, 3, 4);
             pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(239, 99);
+            pnlMenu.Size = new Size(239, 85);
             pnlMenu.TabIndex = 0;
             // 
             // btnMenu
@@ -111,7 +111,7 @@
             btnMenu.Location = new Point(0, 0);
             btnMenu.Margin = new Padding(3, 4, 3, 4);
             btnMenu.Name = "btnMenu";
-            btnMenu.Size = new Size(239, 99);
+            btnMenu.Size = new Size(239, 85);
             btnMenu.TabIndex = 1;
             btnMenu.Tag = "";
             btnMenu.Text = "Menú";
@@ -121,10 +121,10 @@
             // pnlInicio
             // 
             pnlInicio.Controls.Add(btnInicio);
-            pnlInicio.Location = new Point(3, 111);
+            pnlInicio.Location = new Point(3, 97);
             pnlInicio.Margin = new Padding(3, 4, 3, 4);
             pnlInicio.Name = "pnlInicio";
-            pnlInicio.Size = new Size(239, 84);
+            pnlInicio.Size = new Size(239, 62);
             pnlInicio.TabIndex = 1;
             // 
             // btnInicio
@@ -141,7 +141,7 @@
             btnInicio.Location = new Point(0, 0);
             btnInicio.Margin = new Padding(3, 4, 3, 4);
             btnInicio.Name = "btnInicio";
-            btnInicio.Size = new Size(239, 84);
+            btnInicio.Size = new Size(239, 62);
             btnInicio.TabIndex = 0;
             btnInicio.Text = "Inicio";
             btnInicio.UseVisualStyleBackColor = true;
@@ -150,10 +150,10 @@
             // pnlCategorias
             // 
             pnlCategorias.Controls.Add(btnCategorias);
-            pnlCategorias.Location = new Point(3, 203);
+            pnlCategorias.Location = new Point(3, 167);
             pnlCategorias.Margin = new Padding(3, 4, 3, 4);
             pnlCategorias.Name = "pnlCategorias";
-            pnlCategorias.Size = new Size(239, 84);
+            pnlCategorias.Size = new Size(239, 62);
             pnlCategorias.TabIndex = 2;
             // 
             // btnCategorias
@@ -170,7 +170,7 @@
             btnCategorias.Location = new Point(0, 0);
             btnCategorias.Margin = new Padding(3, 4, 3, 4);
             btnCategorias.Name = "btnCategorias";
-            btnCategorias.Size = new Size(239, 84);
+            btnCategorias.Size = new Size(239, 62);
             btnCategorias.TabIndex = 0;
             btnCategorias.Text = "Categorías";
             btnCategorias.UseVisualStyleBackColor = true;
@@ -179,10 +179,10 @@
             // pnlArmatuPc
             // 
             pnlArmatuPc.Controls.Add(btnArmarPc);
-            pnlArmatuPc.Location = new Point(3, 295);
+            pnlArmatuPc.Location = new Point(3, 237);
             pnlArmatuPc.Margin = new Padding(3, 4, 3, 4);
             pnlArmatuPc.Name = "pnlArmatuPc";
-            pnlArmatuPc.Size = new Size(239, 84);
+            pnlArmatuPc.Size = new Size(239, 62);
             pnlArmatuPc.TabIndex = 3;
             // 
             // btnArmarPc
@@ -199,7 +199,7 @@
             btnArmarPc.Location = new Point(0, 0);
             btnArmarPc.Margin = new Padding(3, 4, 3, 4);
             btnArmarPc.Name = "btnArmarPc";
-            btnArmarPc.Size = new Size(239, 84);
+            btnArmarPc.Size = new Size(239, 62);
             btnArmarPc.TabIndex = 0;
             btnArmarPc.Text = "Armá tu PC";
             btnArmarPc.UseVisualStyleBackColor = true;
@@ -208,10 +208,10 @@
             // pnlModoOscuro
             // 
             pnlModoOscuro.Controls.Add(btnModoOscuro);
-            pnlModoOscuro.Location = new Point(3, 387);
+            pnlModoOscuro.Location = new Point(3, 307);
             pnlModoOscuro.Margin = new Padding(3, 4, 3, 4);
             pnlModoOscuro.Name = "pnlModoOscuro";
-            pnlModoOscuro.Size = new Size(239, 84);
+            pnlModoOscuro.Size = new Size(239, 62);
             pnlModoOscuro.TabIndex = 4;
             // 
             // btnModoOscuro
@@ -228,7 +228,7 @@
             btnModoOscuro.Location = new Point(0, 0);
             btnModoOscuro.Margin = new Padding(3, 4, 3, 4);
             btnModoOscuro.Name = "btnModoOscuro";
-            btnModoOscuro.Size = new Size(239, 84);
+            btnModoOscuro.Size = new Size(239, 62);
             btnModoOscuro.TabIndex = 0;
             btnModoOscuro.Text = "Modo oscuro";
             btnModoOscuro.UseVisualStyleBackColor = true;
@@ -237,10 +237,10 @@
             // pnlMiCarrito
             // 
             pnlMiCarrito.Controls.Add(btnMiCarrito);
-            pnlMiCarrito.Location = new Point(3, 479);
+            pnlMiCarrito.Location = new Point(3, 377);
             pnlMiCarrito.Margin = new Padding(3, 4, 3, 4);
             pnlMiCarrito.Name = "pnlMiCarrito";
-            pnlMiCarrito.Size = new Size(239, 84);
+            pnlMiCarrito.Size = new Size(239, 62);
             pnlMiCarrito.TabIndex = 5;
             // 
             // btnMiCarrito
@@ -257,7 +257,7 @@
             btnMiCarrito.Location = new Point(0, 0);
             btnMiCarrito.Margin = new Padding(3, 4, 3, 4);
             btnMiCarrito.Name = "btnMiCarrito";
-            btnMiCarrito.Size = new Size(239, 84);
+            btnMiCarrito.Size = new Size(239, 62);
             btnMiCarrito.TabIndex = 0;
             btnMiCarrito.Text = "Mi carrito";
             btnMiCarrito.UseVisualStyleBackColor = true;
@@ -266,10 +266,10 @@
             // pnlContactanos
             // 
             pnlContactanos.Controls.Add(btnContactanos);
-            pnlContactanos.Location = new Point(3, 571);
+            pnlContactanos.Location = new Point(3, 447);
             pnlContactanos.Margin = new Padding(3, 4, 3, 4);
             pnlContactanos.Name = "pnlContactanos";
-            pnlContactanos.Size = new Size(239, 84);
+            pnlContactanos.Size = new Size(239, 62);
             pnlContactanos.TabIndex = 6;
             // 
             // btnContactanos
@@ -286,7 +286,7 @@
             btnContactanos.Location = new Point(0, 0);
             btnContactanos.Margin = new Padding(3, 4, 3, 4);
             btnContactanos.Name = "btnContactanos";
-            btnContactanos.Size = new Size(239, 84);
+            btnContactanos.Size = new Size(239, 62);
             btnContactanos.TabIndex = 0;
             btnContactanos.Text = "Contáctanos";
             btnContactanos.UseVisualStyleBackColor = true;
@@ -295,10 +295,10 @@
             // pnlNosotros
             // 
             pnlNosotros.Controls.Add(btnNosotros);
-            pnlNosotros.Location = new Point(3, 663);
+            pnlNosotros.Location = new Point(3, 517);
             pnlNosotros.Margin = new Padding(3, 4, 3, 4);
             pnlNosotros.Name = "pnlNosotros";
-            pnlNosotros.Size = new Size(239, 84);
+            pnlNosotros.Size = new Size(239, 62);
             pnlNosotros.TabIndex = 7;
             // 
             // btnNosotros
@@ -315,7 +315,7 @@
             btnNosotros.Location = new Point(0, 0);
             btnNosotros.Margin = new Padding(3, 4, 3, 4);
             btnNosotros.Name = "btnNosotros";
-            btnNosotros.Size = new Size(239, 84);
+            btnNosotros.Size = new Size(239, 62);
             btnNosotros.TabIndex = 0;
             btnNosotros.Text = "Nosotros";
             btnNosotros.UseVisualStyleBackColor = true;
@@ -324,7 +324,7 @@
             // pnlVacioUno
             // 
             pnlVacioUno.Dock = DockStyle.Left;
-            pnlVacioUno.Location = new Point(3, 755);
+            pnlVacioUno.Location = new Point(3, 587);
             pnlVacioUno.Margin = new Padding(3, 4, 3, 4);
             pnlVacioUno.Name = "pnlVacioUno";
             pnlVacioUno.Size = new Size(239, 0);
@@ -333,10 +333,10 @@
             // pnlVacioDos
             // 
             pnlVacioDos.Controls.Add(btnAdministrador);
-            pnlVacioDos.Location = new Point(3, 763);
+            pnlVacioDos.Location = new Point(3, 595);
             pnlVacioDos.Margin = new Padding(3, 4, 3, 4);
             pnlVacioDos.Name = "pnlVacioDos";
-            pnlVacioDos.Size = new Size(239, 80);
+            pnlVacioDos.Size = new Size(239, 62);
             pnlVacioDos.TabIndex = 9;
             // 
             // btnAdministrador
@@ -353,7 +353,7 @@
             btnAdministrador.Location = new Point(0, 0);
             btnAdministrador.Margin = new Padding(3, 4, 3, 4);
             btnAdministrador.Name = "btnAdministrador";
-            btnAdministrador.Size = new Size(239, 80);
+            btnAdministrador.Size = new Size(239, 62);
             btnAdministrador.TabIndex = 1;
             btnAdministrador.Text = "Administrador";
             btnAdministrador.UseVisualStyleBackColor = true;
@@ -362,10 +362,10 @@
             // pnlCerrarSesion
             // 
             pnlCerrarSesion.Controls.Add(btnCerrarSesion);
-            pnlCerrarSesion.Location = new Point(3, 851);
+            pnlCerrarSesion.Location = new Point(3, 665);
             pnlCerrarSesion.Margin = new Padding(3, 4, 3, 4);
             pnlCerrarSesion.Name = "pnlCerrarSesion";
-            pnlCerrarSesion.Size = new Size(239, 99);
+            pnlCerrarSesion.Size = new Size(239, 62);
             pnlCerrarSesion.TabIndex = 10;
             // 
             // btnCerrarSesion
@@ -382,7 +382,7 @@
             btnCerrarSesion.Location = new Point(0, 0);
             btnCerrarSesion.Margin = new Padding(3, 4, 3, 4);
             btnCerrarSesion.Name = "btnCerrarSesion";
-            btnCerrarSesion.Size = new Size(239, 99);
+            btnCerrarSesion.Size = new Size(239, 62);
             btnCerrarSesion.TabIndex = 0;
             btnCerrarSesion.Text = "Cerrar sesión";
             btnCerrarSesion.UseVisualStyleBackColor = true;
@@ -393,9 +393,9 @@
             panel1.BackColor = Color.FromArgb(20, 18, 18);
             panel1.Controls.Add(btnUser);
             panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(63, 0);
+            panel1.Location = new Point(64, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1403, 103);
+            panel1.Size = new Size(1273, 89);
             panel1.TabIndex = 7;
             // 
             // btnUser
@@ -412,7 +412,7 @@
             btnUser.Location = new Point(0, 0);
             btnUser.Margin = new Padding(3, 4, 3, 4);
             btnUser.Name = "btnUser";
-            btnUser.Size = new Size(239, 103);
+            btnUser.Size = new Size(239, 89);
             btnUser.TabIndex = 6;
             btnUser.Tag = "";
             btnUser.UseVisualStyleBackColor = true;
@@ -422,7 +422,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
-            ClientSize = new Size(1466, 957);
+            ClientSize = new Size(1337, 747);
             Controls.Add(panel1);
             Controls.Add(flpContenedor);
             Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
@@ -432,7 +432,6 @@
             Name = "FrmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Byte Bay";
-            WindowState = FormWindowState.Maximized;
             Load += FrmMain_Load;
             flpContenedor.ResumeLayout(false);
             pnlMenu.ResumeLayout(false);

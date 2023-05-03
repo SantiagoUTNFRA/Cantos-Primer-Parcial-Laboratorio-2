@@ -23,7 +23,6 @@
             item.SubItems.Add("Intel");
             item.SubItems.Add("$300");
             item.SubItems.Add("5");
-            lvwCategoria.Items.Add(item);
         }
     }
 }
