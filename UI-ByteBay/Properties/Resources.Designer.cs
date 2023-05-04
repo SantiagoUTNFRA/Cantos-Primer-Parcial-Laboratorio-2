@@ -59,5 +59,15 @@ namespace UI_ByteBay.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FondoMenuStrip {
+            get {
+                object obj = ResourceManager.GetObject("FondoMenuStrip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

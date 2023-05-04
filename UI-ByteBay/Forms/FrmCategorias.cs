@@ -24,5 +24,10 @@
             item.SubItems.Add("$300");
             item.SubItems.Add("5");
         }
+
+        private void btnInicio_MouseEnter(object sender, EventArgs e)
+        {
+            MessageBox.Show("estoy encima");
+        }
     }
 }

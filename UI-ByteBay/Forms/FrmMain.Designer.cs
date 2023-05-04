@@ -85,7 +85,7 @@
             flpContenedor.Location = new Point(0, 0);
             flpContenedor.Margin = new Padding(3, 4, 3, 4);
             flpContenedor.Name = "flpContenedor";
-            flpContenedor.Size = new Size(64, 747);
+            flpContenedor.Size = new Size(71, 747);
             flpContenedor.TabIndex = 5;
             // 
             // pnlMenu
@@ -393,9 +393,9 @@
             panel1.BackColor = Color.FromArgb(20, 18, 18);
             panel1.Controls.Add(btnUser);
             panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(64, 0);
+            panel1.Location = new Point(71, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1273, 89);
+            panel1.Size = new Size(1266, 89);
             panel1.TabIndex = 7;
             // 
             // btnUser
