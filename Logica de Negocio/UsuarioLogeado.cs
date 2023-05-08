@@ -1,6 +1,4 @@
-﻿using Logica_de_Negocio;
-
-namespace Logica_de_Negocio;
+﻿namespace Logica_de_Negocio;
 
 public class UsuarioLogeado
 {

@@ -28,89 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            components = new System.ComponentModel.Container();
+            iconDropDownButton1 = new FontAwesome.Sharp.IconDropDownButton();
+            btnProcesadores = new FontAwesome.Sharp.IconButton();
+            btnAlmacenamiento = new FontAwesome.Sharp.IconButton();
+            btnGraficas = new FontAwesome.Sharp.IconButton();
+            btnMemorias = new FontAwesome.Sharp.IconButton();
+            btnPerifericos = new FontAwesome.Sharp.IconButton();
+            btnMother = new FontAwesome.Sharp.IconButton();
+            panel1 = new Panel();
+            btnGabinetes = new FontAwesome.Sharp.IconButton();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            gbxProcesadores = new GroupBox();
             button2 = new Button();
+            button1 = new Button();
+            gbxGraficas = new GroupBox();
             button3 = new Button();
             button4 = new Button();
+            gbxPerifericos = new GroupBox();
+            button12 = new Button();
+            button9 = new Button();
+            button10 = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            gbxDiscos = new GroupBox();
             button5 = new Button();
-            iconDropDownButton1 = new FontAwesome.Sharp.IconDropDownButton();
-            menuStrip1 = new MenuStrip();
-            procesadoresToolStripMenuItem = new ToolStripMenuItem();
-            intelToolStripMenuItem = new ToolStripMenuItem();
-            amdToolStripMenuItem = new ToolStripMenuItem();
-            placasDeVideoToolStripMenuItem = new ToolStripMenuItem();
-            nvidiaToolStripMenuItem = new ToolStripMenuItem();
-            amdToolStripMenuItem1 = new ToolStripMenuItem();
-            motherToolStripMenuItem = new ToolStripMenuItem();
-            almacenamientoToolStripMenuItem = new ToolStripMenuItem();
-            ssdToolStripMenuItem = new ToolStripMenuItem();
-            discosHDDToolStripMenuItem = new ToolStripMenuItem();
-            perifericosToolStripMenuItem = new ToolStripMenuItem();
-            tecladosToolStripMenuItem = new ToolStripMenuItem();
-            auricularesToolStripMenuItem = new ToolStripMenuItem();
-            mouseToolStripMenuItem = new ToolStripMenuItem();
-            parlantesToolStripMenuItem = new ToolStripMenuItem();
-            microfonosToolStripMenuItem = new ToolStripMenuItem();
-            sillasToolStripMenuItem = new ToolStripMenuItem();
-            cámarasToolStripMenuItem = new ToolStripMenuItem();
-            monitoresToolStripMenuItem = new ToolStripMenuItem();
-            memoriasToolStripMenuItem = new ToolStripMenuItem();
-            dDR4ToolStripMenuItem = new ToolStripMenuItem();
-            dDR5ToolStripMenuItem = new ToolStripMenuItem();
-            gabinetesToolStripMenuItem = new ToolStripMenuItem();
-            btnInicio = new FontAwesome.Sharp.IconButton();
-            menuStrip1.SuspendLayout();
+            button6 = new Button();
+            gbxMemorias = new GroupBox();
+            button11 = new Button();
+            button13 = new Button();
+            gbxGabinetes = new GroupBox();
+            button14 = new Button();
+            button15 = new Button();
+            gbxMother = new GroupBox();
+            button18 = new Button();
+            button16 = new Button();
+            button17 = new Button();
+            tmrTiempoParaSeleccionar = new System.Windows.Forms.Timer(components);
+            dataGridView1 = new DataGridView();
+            panel1.SuspendLayout();
+            gbxProcesadores.SuspendLayout();
+            gbxGraficas.SuspendLayout();
+            gbxPerifericos.SuspendLayout();
+            gbxDiscos.SuspendLayout();
+            gbxMemorias.SuspendLayout();
+            gbxGabinetes.SuspendLayout();
+            gbxMother.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(390, 316);
-            button1.Name = "button1";
-            button1.Size = new Size(141, 32);
-            button1.TabIndex = 28;
-            button1.Text = "Procesadores";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(390, 354);
-            button2.Name = "button2";
-            button2.Size = new Size(141, 32);
-            button2.TabIndex = 29;
-            button2.Text = "Placas de video";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(390, 392);
-            button3.Name = "button3";
-            button3.Size = new Size(141, 32);
-            button3.TabIndex = 30;
-            button3.Text = "Perifericos";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(390, 430);
-            button4.Name = "button4";
-            button4.Size = new Size(141, 32);
-            button4.TabIndex = 31;
-            button4.Text = "Mother";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            button5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.Location = new Point(390, 468);
-            button5.Name = "button5";
-            button5.Size = new Size(141, 32);
-            button5.TabIndex = 32;
-            button5.Text = "Almacenamiento";
-            button5.UseVisualStyleBackColor = true;
             // 
             // iconDropDownButton1
             // 
@@ -121,193 +87,529 @@
             iconDropDownButton1.Size = new Size(23, 23);
             iconDropDownButton1.Text = "iconDropDownButton1";
             // 
-            // menuStrip1
+            // btnProcesadores
             // 
-            menuStrip1.BackgroundImage = Properties.Resources.FondoMenuStrip;
-            menuStrip1.Dock = DockStyle.None;
-            menuStrip1.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { procesadoresToolStripMenuItem, placasDeVideoToolStripMenuItem, motherToolStripMenuItem, almacenamientoToolStripMenuItem, perifericosToolStripMenuItem, memoriasToolStripMenuItem, gabinetesToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(953, 38);
-            menuStrip1.TabIndex = 33;
-            menuStrip1.Text = "menuStrip1";
+            btnProcesadores.Dock = DockStyle.Top;
+            btnProcesadores.FlatAppearance.BorderSize = 0;
+            btnProcesadores.FlatStyle = FlatStyle.Popup;
+            btnProcesadores.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnProcesadores.ForeColor = Color.White;
+            btnProcesadores.IconChar = FontAwesome.Sharp.IconChar.Microchip;
+            btnProcesadores.IconColor = Color.DimGray;
+            btnProcesadores.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnProcesadores.IconSize = 35;
+            btnProcesadores.ImageAlign = ContentAlignment.MiddleRight;
+            btnProcesadores.Location = new Point(0, 330);
+            btnProcesadores.Margin = new Padding(3, 4, 3, 4);
+            btnProcesadores.Name = "btnProcesadores";
+            btnProcesadores.Size = new Size(202, 66);
+            btnProcesadores.TabIndex = 34;
+            btnProcesadores.Text = "Procesadores";
+            btnProcesadores.TextAlign = ContentAlignment.MiddleLeft;
+            btnProcesadores.UseVisualStyleBackColor = true;
+            btnProcesadores.MouseEnter += btnProcesadores_MouseEnter;
             // 
-            // procesadoresToolStripMenuItem
+            // btnAlmacenamiento
             // 
-            procesadoresToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { intelToolStripMenuItem, amdToolStripMenuItem });
-            procesadoresToolStripMenuItem.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            procesadoresToolStripMenuItem.ForeColor = Color.White;
-            procesadoresToolStripMenuItem.Name = "procesadoresToolStripMenuItem";
-            procesadoresToolStripMenuItem.Size = new Size(148, 34);
-            procesadoresToolStripMenuItem.Text = "Procesadores";
+            btnAlmacenamiento.Dock = DockStyle.Top;
+            btnAlmacenamiento.FlatAppearance.BorderSize = 0;
+            btnAlmacenamiento.FlatStyle = FlatStyle.Popup;
+            btnAlmacenamiento.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAlmacenamiento.ForeColor = Color.White;
+            btnAlmacenamiento.IconChar = FontAwesome.Sharp.IconChar.Database;
+            btnAlmacenamiento.IconColor = Color.DimGray;
+            btnAlmacenamiento.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            btnAlmacenamiento.IconSize = 35;
+            btnAlmacenamiento.ImageAlign = ContentAlignment.MiddleRight;
+            btnAlmacenamiento.Location = new Point(0, 198);
+            btnAlmacenamiento.Margin = new Padding(3, 4, 3, 4);
+            btnAlmacenamiento.Name = "btnAlmacenamiento";
+            btnAlmacenamiento.Size = new Size(202, 66);
+            btnAlmacenamiento.TabIndex = 35;
+            btnAlmacenamiento.Text = "Almacenamiento";
+            btnAlmacenamiento.TextAlign = ContentAlignment.MiddleLeft;
+            btnAlmacenamiento.UseVisualStyleBackColor = true;
+            btnAlmacenamiento.MouseEnter += btnAlmacenamiento_MouseEnter;
             // 
-            // intelToolStripMenuItem
+            // btnGraficas
             // 
-            intelToolStripMenuItem.Name = "intelToolStripMenuItem";
-            intelToolStripMenuItem.Size = new Size(130, 34);
-            intelToolStripMenuItem.Text = "Intel";
+            btnGraficas.Dock = DockStyle.Top;
+            btnGraficas.FlatAppearance.BorderSize = 0;
+            btnGraficas.FlatStyle = FlatStyle.Popup;
+            btnGraficas.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnGraficas.ForeColor = Color.White;
+            btnGraficas.IconChar = FontAwesome.Sharp.IconChar.DesktopAlt;
+            btnGraficas.IconColor = Color.DimGray;
+            btnGraficas.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            btnGraficas.IconSize = 35;
+            btnGraficas.ImageAlign = ContentAlignment.MiddleRight;
+            btnGraficas.Location = new Point(0, 66);
+            btnGraficas.Margin = new Padding(3, 4, 3, 4);
+            btnGraficas.Name = "btnGraficas";
+            btnGraficas.Size = new Size(202, 66);
+            btnGraficas.TabIndex = 36;
+            btnGraficas.Text = "Tarjetas Gráficas";
+            btnGraficas.TextAlign = ContentAlignment.MiddleLeft;
+            btnGraficas.UseVisualStyleBackColor = true;
+            btnGraficas.MouseEnter += btnGraficas_MouseEnter;
             // 
-            // amdToolStripMenuItem
+            // btnMemorias
             // 
-            amdToolStripMenuItem.Name = "amdToolStripMenuItem";
-            amdToolStripMenuItem.Size = new Size(130, 34);
-            amdToolStripMenuItem.Text = "Amd";
+            btnMemorias.Dock = DockStyle.Top;
+            btnMemorias.FlatAppearance.BorderColor = Color.DimGray;
+            btnMemorias.FlatAppearance.BorderSize = 0;
+            btnMemorias.FlatStyle = FlatStyle.Popup;
+            btnMemorias.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMemorias.ForeColor = Color.White;
+            btnMemorias.IconChar = FontAwesome.Sharp.IconChar.Memory;
+            btnMemorias.IconColor = Color.DimGray;
+            btnMemorias.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            btnMemorias.IconSize = 35;
+            btnMemorias.ImageAlign = ContentAlignment.MiddleRight;
+            btnMemorias.Location = new Point(0, 0);
+            btnMemorias.Margin = new Padding(3, 4, 3, 4);
+            btnMemorias.Name = "btnMemorias";
+            btnMemorias.Size = new Size(202, 66);
+            btnMemorias.TabIndex = 37;
+            btnMemorias.Text = "Memorias";
+            btnMemorias.TextAlign = ContentAlignment.MiddleLeft;
+            btnMemorias.UseVisualStyleBackColor = true;
+            btnMemorias.MouseEnter += btnMemorias_MouseEnter;
             // 
-            // placasDeVideoToolStripMenuItem
+            // btnPerifericos
             // 
-            placasDeVideoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nvidiaToolStripMenuItem, amdToolStripMenuItem1 });
-            placasDeVideoToolStripMenuItem.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            placasDeVideoToolStripMenuItem.ForeColor = Color.White;
-            placasDeVideoToolStripMenuItem.Name = "placasDeVideoToolStripMenuItem";
-            placasDeVideoToolStripMenuItem.Size = new Size(168, 34);
-            placasDeVideoToolStripMenuItem.Text = "Placas de video";
+            btnPerifericos.Dock = DockStyle.Top;
+            btnPerifericos.FlatAppearance.BorderSize = 0;
+            btnPerifericos.FlatStyle = FlatStyle.Popup;
+            btnPerifericos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPerifericos.ForeColor = Color.White;
+            btnPerifericos.IconChar = FontAwesome.Sharp.IconChar.Headphones;
+            btnPerifericos.IconColor = Color.DimGray;
+            btnPerifericos.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            btnPerifericos.IconSize = 35;
+            btnPerifericos.ImageAlign = ContentAlignment.MiddleRight;
+            btnPerifericos.Location = new Point(0, 132);
+            btnPerifericos.Margin = new Padding(3, 4, 3, 4);
+            btnPerifericos.Name = "btnPerifericos";
+            btnPerifericos.Size = new Size(202, 66);
+            btnPerifericos.TabIndex = 38;
+            btnPerifericos.Text = "Perifericos";
+            btnPerifericos.TextAlign = ContentAlignment.MiddleLeft;
+            btnPerifericos.UseVisualStyleBackColor = true;
+            btnPerifericos.MouseEnter += btnPerifericos_MouseEnter;
             // 
-            // nvidiaToolStripMenuItem
+            // btnMother
             // 
-            nvidiaToolStripMenuItem.Name = "nvidiaToolStripMenuItem";
-            nvidiaToolStripMenuItem.Size = new Size(145, 34);
-            nvidiaToolStripMenuItem.Text = "Nvidia";
+            btnMother.Dock = DockStyle.Top;
+            btnMother.FlatAppearance.BorderSize = 0;
+            btnMother.FlatStyle = FlatStyle.Popup;
+            btnMother.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMother.ForeColor = Color.White;
+            btnMother.IconChar = FontAwesome.Sharp.IconChar.Microchip;
+            btnMother.IconColor = Color.DimGray;
+            btnMother.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            btnMother.IconSize = 35;
+            btnMother.ImageAlign = ContentAlignment.MiddleRight;
+            btnMother.Location = new Point(0, 264);
+            btnMother.Margin = new Padding(3, 4, 3, 4);
+            btnMother.Name = "btnMother";
+            btnMother.Size = new Size(202, 66);
+            btnMother.TabIndex = 39;
+            btnMother.Text = "Mother";
+            btnMother.TextAlign = ContentAlignment.MiddleLeft;
+            btnMother.UseVisualStyleBackColor = true;
+            btnMother.MouseEnter += btnMother_MouseEnter;
             // 
-            // amdToolStripMenuItem1
+            // panel1
             // 
-            amdToolStripMenuItem1.Name = "amdToolStripMenuItem1";
-            amdToolStripMenuItem1.Size = new Size(145, 34);
-            amdToolStripMenuItem1.Text = "Amd";
+            panel1.Controls.Add(btnGabinetes);
+            panel1.Controls.Add(btnProcesadores);
+            panel1.Controls.Add(btnMother);
+            panel1.Controls.Add(btnAlmacenamiento);
+            panel1.Controls.Add(btnPerifericos);
+            panel1.Controls.Add(btnGraficas);
+            panel1.Controls.Add(btnMemorias);
+            panel1.Location = new Point(21, 31);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(202, 464);
+            panel1.TabIndex = 40;
             // 
-            // motherToolStripMenuItem
+            // btnGabinetes
             // 
-            motherToolStripMenuItem.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            motherToolStripMenuItem.ForeColor = Color.White;
-            motherToolStripMenuItem.Name = "motherToolStripMenuItem";
-            motherToolStripMenuItem.Size = new Size(93, 34);
-            motherToolStripMenuItem.Text = "Mother";
+            btnGabinetes.Dock = DockStyle.Top;
+            btnGabinetes.FlatAppearance.BorderSize = 0;
+            btnGabinetes.FlatStyle = FlatStyle.Popup;
+            btnGabinetes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnGabinetes.ForeColor = Color.White;
+            btnGabinetes.IconChar = FontAwesome.Sharp.IconChar.Cube;
+            btnGabinetes.IconColor = Color.DimGray;
+            btnGabinetes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnGabinetes.IconSize = 35;
+            btnGabinetes.ImageAlign = ContentAlignment.MiddleRight;
+            btnGabinetes.Location = new Point(0, 396);
+            btnGabinetes.Margin = new Padding(3, 4, 3, 4);
+            btnGabinetes.Name = "btnGabinetes";
+            btnGabinetes.Size = new Size(202, 66);
+            btnGabinetes.TabIndex = 40;
+            btnGabinetes.Text = "Gabinetes";
+            btnGabinetes.TextAlign = ContentAlignment.MiddleLeft;
+            btnGabinetes.UseVisualStyleBackColor = true;
+            btnGabinetes.MouseEnter += btnGabinetes_MouseEnter;
             // 
-            // almacenamientoToolStripMenuItem
+            // panel2
             // 
-            almacenamientoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ssdToolStripMenuItem, discosHDDToolStripMenuItem });
-            almacenamientoToolStripMenuItem.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            almacenamientoToolStripMenuItem.ForeColor = Color.White;
-            almacenamientoToolStripMenuItem.Name = "almacenamientoToolStripMenuItem";
-            almacenamientoToolStripMenuItem.Size = new Size(182, 34);
-            almacenamientoToolStripMenuItem.Text = "Almacenamiento";
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(15, 616);
+            panel2.TabIndex = 41;
             // 
-            // ssdToolStripMenuItem
+            // panel3
             // 
-            ssdToolStripMenuItem.Name = "ssdToolStripMenuItem";
-            ssdToolStripMenuItem.Size = new Size(197, 34);
-            ssdToolStripMenuItem.Text = "Discos SSD";
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(15, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1241, 25);
+            panel3.TabIndex = 42;
             // 
-            // discosHDDToolStripMenuItem
+            // gbxProcesadores
             // 
-            discosHDDToolStripMenuItem.Name = "discosHDDToolStripMenuItem";
-            discosHDDToolStripMenuItem.Size = new Size(197, 34);
-            discosHDDToolStripMenuItem.Text = "Discos HDD";
+            gbxProcesadores.Controls.Add(button2);
+            gbxProcesadores.Controls.Add(button1);
+            gbxProcesadores.FlatStyle = FlatStyle.Flat;
+            gbxProcesadores.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            gbxProcesadores.ForeColor = Color.White;
+            gbxProcesadores.Location = new Point(917, 458);
+            gbxProcesadores.Name = "gbxProcesadores";
+            gbxProcesadores.Size = new Size(105, 97);
+            gbxProcesadores.TabIndex = 43;
+            gbxProcesadores.TabStop = false;
+            gbxProcesadores.Text = "Procesadores";
             // 
-            // perifericosToolStripMenuItem
+            // button2
             // 
-            perifericosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { tecladosToolStripMenuItem, auricularesToolStripMenuItem, mouseToolStripMenuItem, parlantesToolStripMenuItem, microfonosToolStripMenuItem, sillasToolStripMenuItem, cámarasToolStripMenuItem, monitoresToolStripMenuItem });
-            perifericosToolStripMenuItem.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            perifericosToolStripMenuItem.ForeColor = Color.White;
-            perifericosToolStripMenuItem.Name = "perifericosToolStripMenuItem";
-            perifericosToolStripMenuItem.Size = new Size(120, 34);
-            perifericosToolStripMenuItem.Text = "Perifericos";
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(6, 58);
+            button2.Name = "button2";
+            button2.Size = new Size(90, 30);
+            button2.TabIndex = 1;
+            button2.Text = "Intel";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = true;
             // 
-            // tecladosToolStripMenuItem
+            // button1
             // 
-            tecladosToolStripMenuItem.Name = "tecladosToolStripMenuItem";
-            tecladosToolStripMenuItem.Size = new Size(191, 34);
-            tecladosToolStripMenuItem.Text = "Teclados";
+            button1.BackColor = Color.FromArgb(20, 18, 18);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(6, 22);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 30);
+            button1.TabIndex = 0;
+            button1.Text = "AMD";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = false;
             // 
-            // auricularesToolStripMenuItem
+            // gbxGraficas
             // 
-            auricularesToolStripMenuItem.Name = "auricularesToolStripMenuItem";
-            auricularesToolStripMenuItem.Size = new Size(191, 34);
-            auricularesToolStripMenuItem.Text = "Auriculares";
+            gbxGraficas.Controls.Add(button3);
+            gbxGraficas.Controls.Add(button4);
+            gbxGraficas.ForeColor = Color.White;
+            gbxGraficas.Location = new Point(1139, 149);
+            gbxGraficas.Name = "gbxGraficas";
+            gbxGraficas.Size = new Size(105, 95);
+            gbxGraficas.TabIndex = 44;
+            gbxGraficas.TabStop = false;
+            gbxGraficas.Text = "Graficas";
             // 
-            // mouseToolStripMenuItem
+            // button3
             // 
-            mouseToolStripMenuItem.Name = "mouseToolStripMenuItem";
-            mouseToolStripMenuItem.Size = new Size(191, 34);
-            mouseToolStripMenuItem.Text = "Mouse";
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(6, 58);
+            button3.Name = "button3";
+            button3.Size = new Size(90, 30);
+            button3.TabIndex = 1;
+            button3.Text = "Nvidia";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = true;
             // 
-            // parlantesToolStripMenuItem
+            // button4
             // 
-            parlantesToolStripMenuItem.Name = "parlantesToolStripMenuItem";
-            parlantesToolStripMenuItem.Size = new Size(191, 34);
-            parlantesToolStripMenuItem.Text = "Parlantes";
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Popup;
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(6, 22);
+            button4.Name = "button4";
+            button4.Size = new Size(90, 30);
+            button4.TabIndex = 0;
+            button4.Text = "AMD";
+            button4.TextAlign = ContentAlignment.MiddleLeft;
+            button4.UseVisualStyleBackColor = true;
             // 
-            // microfonosToolStripMenuItem
+            // gbxPerifericos
             // 
-            microfonosToolStripMenuItem.Name = "microfonosToolStripMenuItem";
-            microfonosToolStripMenuItem.Size = new Size(191, 34);
-            microfonosToolStripMenuItem.Text = "Microfonos";
+            gbxPerifericos.Controls.Add(button12);
+            gbxPerifericos.Controls.Add(button9);
+            gbxPerifericos.Controls.Add(button10);
+            gbxPerifericos.Controls.Add(button7);
+            gbxPerifericos.Controls.Add(button8);
+            gbxPerifericos.ForeColor = Color.White;
+            gbxPerifericos.Location = new Point(1139, 250);
+            gbxPerifericos.Name = "gbxPerifericos";
+            gbxPerifericos.Size = new Size(105, 202);
+            gbxPerifericos.TabIndex = 46;
+            gbxPerifericos.TabStop = false;
+            gbxPerifericos.Text = "Perifericos";
             // 
-            // sillasToolStripMenuItem
+            // button12
             // 
-            sillasToolStripMenuItem.Name = "sillasToolStripMenuItem";
-            sillasToolStripMenuItem.Size = new Size(191, 34);
-            sillasToolStripMenuItem.Text = "Sillas";
+            button12.FlatAppearance.BorderSize = 0;
+            button12.FlatStyle = FlatStyle.Popup;
+            button12.ForeColor = Color.White;
+            button12.Location = new Point(6, 166);
+            button12.Name = "button12";
+            button12.Size = new Size(90, 30);
+            button12.TabIndex = 4;
+            button12.Text = "Monitores";
+            button12.TextAlign = ContentAlignment.MiddleLeft;
+            button12.UseVisualStyleBackColor = true;
             // 
-            // cámarasToolStripMenuItem
+            // button9
             // 
-            cámarasToolStripMenuItem.Name = "cámarasToolStripMenuItem";
-            cámarasToolStripMenuItem.Size = new Size(191, 34);
-            cámarasToolStripMenuItem.Text = "Cámaras";
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatStyle = FlatStyle.Popup;
+            button9.ForeColor = Color.White;
+            button9.Location = new Point(6, 130);
+            button9.Name = "button9";
+            button9.Size = new Size(90, 30);
+            button9.TabIndex = 3;
+            button9.Text = "Microfonos";
+            button9.TextAlign = ContentAlignment.MiddleLeft;
+            button9.UseVisualStyleBackColor = true;
             // 
-            // monitoresToolStripMenuItem
+            // button10
             // 
-            monitoresToolStripMenuItem.Name = "monitoresToolStripMenuItem";
-            monitoresToolStripMenuItem.Size = new Size(191, 34);
-            monitoresToolStripMenuItem.Text = "Monitores";
+            button10.FlatAppearance.BorderSize = 0;
+            button10.FlatStyle = FlatStyle.Popup;
+            button10.ForeColor = Color.White;
+            button10.Location = new Point(6, 94);
+            button10.Name = "button10";
+            button10.Size = new Size(90, 30);
+            button10.TabIndex = 2;
+            button10.Text = "Mouse";
+            button10.TextAlign = ContentAlignment.MiddleLeft;
+            button10.UseVisualStyleBackColor = true;
             // 
-            // memoriasToolStripMenuItem
+            // button7
             // 
-            memoriasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { dDR4ToolStripMenuItem, dDR5ToolStripMenuItem });
-            memoriasToolStripMenuItem.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            memoriasToolStripMenuItem.ForeColor = Color.White;
-            memoriasToolStripMenuItem.Name = "memoriasToolStripMenuItem";
-            memoriasToolStripMenuItem.Size = new Size(117, 34);
-            memoriasToolStripMenuItem.Text = "Memorias";
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Popup;
+            button7.ForeColor = Color.White;
+            button7.Location = new Point(6, 58);
+            button7.Name = "button7";
+            button7.Size = new Size(90, 30);
+            button7.TabIndex = 1;
+            button7.Text = "Auriculares";
+            button7.TextAlign = ContentAlignment.MiddleLeft;
+            button7.UseVisualStyleBackColor = true;
             // 
-            // dDR4ToolStripMenuItem
+            // button8
             // 
-            dDR4ToolStripMenuItem.Name = "dDR4ToolStripMenuItem";
-            dDR4ToolStripMenuItem.Size = new Size(140, 34);
-            dDR4ToolStripMenuItem.Text = "DDR4";
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatStyle = FlatStyle.Popup;
+            button8.ForeColor = Color.White;
+            button8.Location = new Point(6, 22);
+            button8.Name = "button8";
+            button8.Size = new Size(90, 30);
+            button8.TabIndex = 0;
+            button8.Text = "Teclados";
+            button8.TextAlign = ContentAlignment.MiddleLeft;
+            button8.UseVisualStyleBackColor = true;
             // 
-            // dDR5ToolStripMenuItem
+            // gbxDiscos
             // 
-            dDR5ToolStripMenuItem.Name = "dDR5ToolStripMenuItem";
-            dDR5ToolStripMenuItem.Size = new Size(140, 34);
-            dDR5ToolStripMenuItem.Text = "DDR5";
+            gbxDiscos.Controls.Add(button5);
+            gbxDiscos.Controls.Add(button6);
+            gbxDiscos.ForeColor = Color.White;
+            gbxDiscos.Location = new Point(1139, 458);
+            gbxDiscos.Name = "gbxDiscos";
+            gbxDiscos.Size = new Size(105, 112);
+            gbxDiscos.TabIndex = 47;
+            gbxDiscos.TabStop = false;
+            gbxDiscos.Text = "Discos";
             // 
-            // gabinetesToolStripMenuItem
+            // button5
             // 
-            gabinetesToolStripMenuItem.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            gabinetesToolStripMenuItem.ForeColor = Color.White;
-            gabinetesToolStripMenuItem.Name = "gabinetesToolStripMenuItem";
-            gabinetesToolStripMenuItem.Size = new Size(117, 34);
-            gabinetesToolStripMenuItem.Text = "Gabinetes";
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Popup;
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(6, 58);
+            button5.Name = "button5";
+            button5.Size = new Size(90, 30);
+            button5.TabIndex = 1;
+            button5.Text = "HDD";
+            button5.TextAlign = ContentAlignment.MiddleLeft;
+            button5.UseVisualStyleBackColor = true;
             // 
-            // btnInicio
+            // button6
             // 
-            btnInicio.FlatAppearance.BorderSize = 0;
-            btnInicio.FlatStyle = FlatStyle.Flat;
-            btnInicio.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnInicio.ForeColor = Color.White;
-            btnInicio.IconChar = FontAwesome.Sharp.IconChar.House;
-            btnInicio.IconColor = Color.DimGray;
-            btnInicio.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            btnInicio.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInicio.Location = new Point(12, 42);
-            btnInicio.Margin = new Padding(3, 4, 3, 4);
-            btnInicio.Name = "btnInicio";
-            btnInicio.Size = new Size(239, 62);
-            btnInicio.TabIndex = 34;
-            btnInicio.Text = "Inicio";
-            btnInicio.UseVisualStyleBackColor = true;
-            btnInicio.MouseEnter += btnInicio_MouseEnter;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Popup;
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(6, 22);
+            button6.Name = "button6";
+            button6.Size = new Size(90, 30);
+            button6.TabIndex = 0;
+            button6.Text = "SSD";
+            button6.TextAlign = ContentAlignment.MiddleLeft;
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // gbxMemorias
+            // 
+            gbxMemorias.Controls.Add(button11);
+            gbxMemorias.Controls.Add(button13);
+            gbxMemorias.ForeColor = Color.White;
+            gbxMemorias.Location = new Point(1139, 31);
+            gbxMemorias.Name = "gbxMemorias";
+            gbxMemorias.Size = new Size(105, 112);
+            gbxMemorias.TabIndex = 48;
+            gbxMemorias.TabStop = false;
+            gbxMemorias.Text = "Memorias";
+            // 
+            // button11
+            // 
+            button11.FlatAppearance.BorderSize = 0;
+            button11.FlatStyle = FlatStyle.Popup;
+            button11.ForeColor = Color.White;
+            button11.Location = new Point(6, 58);
+            button11.Name = "button11";
+            button11.Size = new Size(90, 30);
+            button11.TabIndex = 1;
+            button11.Text = "DDR5";
+            button11.TextAlign = ContentAlignment.MiddleLeft;
+            button11.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            button13.FlatAppearance.BorderSize = 0;
+            button13.FlatStyle = FlatStyle.Popup;
+            button13.ForeColor = Color.White;
+            button13.Location = new Point(6, 22);
+            button13.Name = "button13";
+            button13.Size = new Size(90, 30);
+            button13.TabIndex = 0;
+            button13.Text = "DDR4";
+            button13.TextAlign = ContentAlignment.MiddleLeft;
+            button13.UseVisualStyleBackColor = true;
+            // 
+            // gbxGabinetes
+            // 
+            gbxGabinetes.Controls.Add(button14);
+            gbxGabinetes.Controls.Add(button15);
+            gbxGabinetes.ForeColor = Color.White;
+            gbxGabinetes.Location = new Point(806, 458);
+            gbxGabinetes.Name = "gbxGabinetes";
+            gbxGabinetes.Size = new Size(105, 112);
+            gbxGabinetes.TabIndex = 49;
+            gbxGabinetes.TabStop = false;
+            gbxGabinetes.Text = "Gabinetes";
+            // 
+            // button14
+            // 
+            button14.FlatAppearance.BorderSize = 0;
+            button14.FlatStyle = FlatStyle.Popup;
+            button14.ForeColor = Color.White;
+            button14.Location = new Point(6, 58);
+            button14.Name = "button14";
+            button14.Size = new Size(90, 30);
+            button14.TabIndex = 1;
+            button14.Text = "Negros";
+            button14.TextAlign = ContentAlignment.MiddleLeft;
+            button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            button15.FlatAppearance.BorderSize = 0;
+            button15.FlatStyle = FlatStyle.Popup;
+            button15.ForeColor = Color.White;
+            button15.Location = new Point(6, 22);
+            button15.Name = "button15";
+            button15.Size = new Size(90, 30);
+            button15.TabIndex = 0;
+            button15.Text = "Blancos";
+            button15.TextAlign = ContentAlignment.MiddleLeft;
+            button15.UseVisualStyleBackColor = true;
+            // 
+            // gbxMother
+            // 
+            gbxMother.Controls.Add(button18);
+            gbxMother.Controls.Add(button16);
+            gbxMother.Controls.Add(button17);
+            gbxMother.ForeColor = Color.White;
+            gbxMother.Location = new Point(1028, 458);
+            gbxMother.Name = "gbxMother";
+            gbxMother.Size = new Size(105, 133);
+            gbxMother.TabIndex = 50;
+            gbxMother.TabStop = false;
+            gbxMother.Text = "Mother";
+            // 
+            // button18
+            // 
+            button18.FlatAppearance.BorderSize = 0;
+            button18.FlatStyle = FlatStyle.Popup;
+            button18.ForeColor = Color.White;
+            button18.Location = new Point(6, 94);
+            button18.Name = "button18";
+            button18.Size = new Size(90, 30);
+            button18.TabIndex = 2;
+            button18.Text = "Gigabyte";
+            button18.TextAlign = ContentAlignment.MiddleLeft;
+            button18.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            button16.FlatAppearance.BorderSize = 0;
+            button16.FlatStyle = FlatStyle.Popup;
+            button16.ForeColor = Color.White;
+            button16.Location = new Point(6, 58);
+            button16.Name = "button16";
+            button16.Size = new Size(90, 30);
+            button16.TabIndex = 1;
+            button16.Text = "Asrock";
+            button16.TextAlign = ContentAlignment.MiddleLeft;
+            button16.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            button17.FlatAppearance.BorderSize = 0;
+            button17.FlatStyle = FlatStyle.Popup;
+            button17.ForeColor = Color.White;
+            button17.Location = new Point(6, 22);
+            button17.Name = "button17";
+            button17.Size = new Size(90, 30);
+            button17.TabIndex = 0;
+            button17.Text = "Asus";
+            button17.TextAlign = ContentAlignment.MiddleLeft;
+            button17.UseVisualStyleBackColor = true;
+            // 
+            // tmrTiempoParaSeleccionar
+            // 
+            tmrTiempoParaSeleccionar.Interval = 5000;
+            tmrTiempoParaSeleccionar.Tick += tmrTiempoParaSeleccionar_Tick;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(307, 31);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(576, 319);
+            dataGridView1.TabIndex = 51;
             // 
             // FrmCategorias
             // 
@@ -315,60 +617,74 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = Color.FromArgb(20, 18, 18);
-            ClientSize = new Size(1337, 747);
-            Controls.Add(btnInicio);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
+            ClientSize = new Size(1256, 616);
+            Controls.Add(dataGridView1);
+            Controls.Add(gbxMother);
+            Controls.Add(gbxGabinetes);
+            Controls.Add(gbxMemorias);
+            Controls.Add(gbxDiscos);
+            Controls.Add(gbxPerifericos);
+            Controls.Add(gbxGraficas);
+            Controls.Add(gbxProcesadores);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             MdiChildrenMinimizedAnchorBottom = false;
             Name = "FrmCategorias";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmCategorias";
             WindowState = FormWindowState.Maximized;
             Load += FrmCategorias_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            panel1.ResumeLayout(false);
+            gbxProcesadores.ResumeLayout(false);
+            gbxGraficas.ResumeLayout(false);
+            gbxPerifericos.ResumeLayout(false);
+            gbxDiscos.ResumeLayout(false);
+            gbxMemorias.ResumeLayout(false);
+            gbxGabinetes.ResumeLayout(false);
+            gbxMother.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
+        private Panel panel1;
+        private FontAwesome.Sharp.IconDropDownButton iconDropDownButton1;
+        private FontAwesome.Sharp.IconButton btnProcesadores;
+        private FontAwesome.Sharp.IconButton btnAlmacenamiento;
+        private FontAwesome.Sharp.IconButton btnGraficas;
+        private FontAwesome.Sharp.IconButton btnMemorias;
+        private FontAwesome.Sharp.IconButton btnPerifericos;
+        private FontAwesome.Sharp.IconButton btnMother;
+        private FontAwesome.Sharp.IconButton btnGabinetes;
+        private Panel panel2;
+        private Panel panel3;
+        private GroupBox gbxProcesadores;
         private Button button1;
         private Button button2;
+        private GroupBox gbxGraficas;
         private Button button3;
         private Button button4;
-        private Panel panel1;
+        private GroupBox gbxPerifericos;
+        private Button button7;
+        private Button button8;
+        private Button button12;
+        private Button button9;
+        private Button button10;
+        private GroupBox gbxDiscos;
         private Button button5;
-        private FontAwesome.Sharp.IconDropDownButton iconDropDownButton1;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem procesadoresToolStripMenuItem;
-        private ToolStripMenuItem intelToolStripMenuItem;
-        private ToolStripMenuItem amdToolStripMenuItem;
-        private ToolStripMenuItem placasDeVideoToolStripMenuItem;
-        private ToolStripMenuItem nvidiaToolStripMenuItem;
-        private ToolStripMenuItem amdToolStripMenuItem1;
-        private ToolStripMenuItem motherToolStripMenuItem;
-        private ToolStripMenuItem almacenamientoToolStripMenuItem;
-        private ToolStripMenuItem ssdToolStripMenuItem;
-        private ToolStripMenuItem discosHDDToolStripMenuItem;
-        private ToolStripMenuItem perifericosToolStripMenuItem;
-        private ToolStripMenuItem tecladosToolStripMenuItem;
-        private ToolStripMenuItem auricularesToolStripMenuItem;
-        private ToolStripMenuItem mouseToolStripMenuItem;
-        private ToolStripMenuItem parlantesToolStripMenuItem;
-        private ToolStripMenuItem microfonosToolStripMenuItem;
-        private ToolStripMenuItem sillasToolStripMenuItem;
-        private ToolStripMenuItem cámarasToolStripMenuItem;
-        private ToolStripMenuItem monitoresToolStripMenuItem;
-        private ToolStripMenuItem memoriasToolStripMenuItem;
-        private ToolStripMenuItem dDR4ToolStripMenuItem;
-        private ToolStripMenuItem dDR5ToolStripMenuItem;
-        private ToolStripMenuItem gabinetesToolStripMenuItem;
-        private FontAwesome.Sharp.IconButton btnInicio;
+        private Button button6;
+        private GroupBox gbxMemorias;
+        private Button button11;
+        private Button button13;
+        private GroupBox gbxGabinetes;
+        private Button button14;
+        private Button button15;
+        private GroupBox gbxMother;
+        private Button button16;
+        private Button button17;
+        private Button button18;
+        private System.Windows.Forms.Timer tmrTiempoParaSeleccionar;
+        private DataGridView dataGridView1;
     }
 }

@@ -15,15 +15,21 @@ namespace UI_ByteBay.Forms
         public FrmMiCarrito()
         {
             InitializeComponent();
-
             FormBorderStyle = FormBorderStyle.None;
             WindowState = FormWindowState.Maximized;
             StartPosition = FormStartPosition.Manual;
-            ControlBox = false;
-            MaximizeBox = false;
-            MinimizeBox = false;
             ShowInTaskbar = false;
             ShowIcon = false;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.ControlBox = false;
+        }
+
+        private void FrmMiCarrito_Load(object sender, EventArgs e)
+        {
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.ControlBox = false;
         }
     }
 }

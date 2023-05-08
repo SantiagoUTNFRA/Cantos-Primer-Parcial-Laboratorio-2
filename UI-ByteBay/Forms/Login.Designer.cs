@@ -316,7 +316,6 @@
             MdiChildrenMinimizedAnchorBottom = false;
             MinimizeBox = false;
             Name = "Login";
-            Load += Login_Load;
             panel1.ResumeLayout(false);
             tbcAll.ResumeLayout(false);
             tpIniciar.ResumeLayout(false);

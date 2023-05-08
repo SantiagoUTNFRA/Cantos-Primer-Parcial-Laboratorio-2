@@ -17,8 +17,5 @@ namespace Firestore
             }
             return _firestoreDB;
         }
-
-
-
     }
 }

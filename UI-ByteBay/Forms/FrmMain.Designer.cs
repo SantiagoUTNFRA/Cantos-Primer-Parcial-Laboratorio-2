@@ -85,7 +85,7 @@
             flpContenedor.Location = new Point(0, 0);
             flpContenedor.Margin = new Padding(3, 4, 3, 4);
             flpContenedor.Name = "flpContenedor";
-            flpContenedor.Size = new Size(71, 747);
+            flpContenedor.Size = new Size(65, 772);
             flpContenedor.TabIndex = 5;
             // 
             // pnlMenu
@@ -94,7 +94,7 @@
             pnlMenu.Location = new Point(3, 4);
             pnlMenu.Margin = new Padding(3, 4, 3, 4);
             pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(239, 85);
+            pnlMenu.Size = new Size(206, 85);
             pnlMenu.TabIndex = 0;
             // 
             // btnMenu
@@ -124,7 +124,7 @@
             pnlInicio.Location = new Point(3, 97);
             pnlInicio.Margin = new Padding(3, 4, 3, 4);
             pnlInicio.Name = "pnlInicio";
-            pnlInicio.Size = new Size(239, 62);
+            pnlInicio.Size = new Size(206, 62);
             pnlInicio.TabIndex = 1;
             // 
             // btnInicio
@@ -153,7 +153,7 @@
             pnlCategorias.Location = new Point(3, 167);
             pnlCategorias.Margin = new Padding(3, 4, 3, 4);
             pnlCategorias.Name = "pnlCategorias";
-            pnlCategorias.Size = new Size(239, 62);
+            pnlCategorias.Size = new Size(206, 62);
             pnlCategorias.TabIndex = 2;
             // 
             // btnCategorias
@@ -182,7 +182,7 @@
             pnlArmatuPc.Location = new Point(3, 237);
             pnlArmatuPc.Margin = new Padding(3, 4, 3, 4);
             pnlArmatuPc.Name = "pnlArmatuPc";
-            pnlArmatuPc.Size = new Size(239, 62);
+            pnlArmatuPc.Size = new Size(206, 62);
             pnlArmatuPc.TabIndex = 3;
             // 
             // btnArmarPc
@@ -211,7 +211,7 @@
             pnlModoOscuro.Location = new Point(3, 307);
             pnlModoOscuro.Margin = new Padding(3, 4, 3, 4);
             pnlModoOscuro.Name = "pnlModoOscuro";
-            pnlModoOscuro.Size = new Size(239, 62);
+            pnlModoOscuro.Size = new Size(206, 62);
             pnlModoOscuro.TabIndex = 4;
             // 
             // btnModoOscuro
@@ -240,7 +240,7 @@
             pnlMiCarrito.Location = new Point(3, 377);
             pnlMiCarrito.Margin = new Padding(3, 4, 3, 4);
             pnlMiCarrito.Name = "pnlMiCarrito";
-            pnlMiCarrito.Size = new Size(239, 62);
+            pnlMiCarrito.Size = new Size(206, 62);
             pnlMiCarrito.TabIndex = 5;
             // 
             // btnMiCarrito
@@ -269,7 +269,7 @@
             pnlContactanos.Location = new Point(3, 447);
             pnlContactanos.Margin = new Padding(3, 4, 3, 4);
             pnlContactanos.Name = "pnlContactanos";
-            pnlContactanos.Size = new Size(239, 62);
+            pnlContactanos.Size = new Size(206, 62);
             pnlContactanos.TabIndex = 6;
             // 
             // btnContactanos
@@ -298,7 +298,7 @@
             pnlNosotros.Location = new Point(3, 517);
             pnlNosotros.Margin = new Padding(3, 4, 3, 4);
             pnlNosotros.Name = "pnlNosotros";
-            pnlNosotros.Size = new Size(239, 62);
+            pnlNosotros.Size = new Size(206, 62);
             pnlNosotros.TabIndex = 7;
             // 
             // btnNosotros
@@ -327,7 +327,7 @@
             pnlVacioUno.Location = new Point(3, 587);
             pnlVacioUno.Margin = new Padding(3, 4, 3, 4);
             pnlVacioUno.Name = "pnlVacioUno";
-            pnlVacioUno.Size = new Size(239, 0);
+            pnlVacioUno.Size = new Size(206, 0);
             pnlVacioUno.TabIndex = 8;
             // 
             // pnlVacioDos
@@ -336,7 +336,7 @@
             pnlVacioDos.Location = new Point(3, 595);
             pnlVacioDos.Margin = new Padding(3, 4, 3, 4);
             pnlVacioDos.Name = "pnlVacioDos";
-            pnlVacioDos.Size = new Size(239, 62);
+            pnlVacioDos.Size = new Size(206, 62);
             pnlVacioDos.TabIndex = 9;
             // 
             // btnAdministrador
@@ -365,7 +365,7 @@
             pnlCerrarSesion.Location = new Point(3, 665);
             pnlCerrarSesion.Margin = new Padding(3, 4, 3, 4);
             pnlCerrarSesion.Name = "pnlCerrarSesion";
-            pnlCerrarSesion.Size = new Size(239, 62);
+            pnlCerrarSesion.Size = new Size(206, 62);
             pnlCerrarSesion.TabIndex = 10;
             // 
             // btnCerrarSesion
@@ -393,9 +393,9 @@
             panel1.BackColor = Color.FromArgb(20, 18, 18);
             panel1.Controls.Add(btnUser);
             panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(71, 0);
+            panel1.Location = new Point(65, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1266, 89);
+            panel1.Size = new Size(1287, 89);
             panel1.TabIndex = 7;
             // 
             // btnUser
@@ -422,7 +422,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
-            ClientSize = new Size(1337, 747);
+            ClientSize = new Size(1352, 772);
             Controls.Add(panel1);
             Controls.Add(flpContenedor);
             Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);

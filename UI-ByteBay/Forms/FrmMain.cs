@@ -1,4 +1,5 @@
 using FontAwesome.Sharp;
+using Logica_de_Negocio;
 using UI_ByteBay.Forms;
 
 namespace UI_ByteBay
@@ -10,7 +11,6 @@ namespace UI_ByteBay
         private bool estaColapsado;
 
         //Variables para verificar su estado y no volver a abrir el mismo formulario
-        private Dictionary<Type, Form> formularios = new Dictionary<Type, Form>();
         private Form formularioActual = null!;
 
         private readonly FrmInicio frmInicio;
@@ -20,7 +20,6 @@ namespace UI_ByteBay
         private readonly FrmAdministrador frmAdministrador;
         private readonly FrmArmaTuPc frmArmaTuPc;
         private readonly FrmContactanos frmContactanos;
-
 
         public FrmMain()
         {
@@ -63,8 +62,25 @@ namespace UI_ByteBay
             menuWidth = flpContenedor.Width;
             iconWidth = pnlInicio.Width;
             estaColapsado = false;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.ControlBox = false;
+
 
             MostrarFormulario(frmInicio);
+            UsuarioLogeado usuarioLogeado = UsuarioLogeado.ObtenerInstancia();
+
+            Usuario usuarioActual = usuarioLogeado.GetUsuario();
+            if (usuarioActual != null)
+            {
+                btnUser.Text = "Bienvenido " + usuarioActual.NombreUsuario;
+            }
+            else
+            {
+                btnUser.Text = "Modo Invitado";
+                btnUser.IconChar = IconChar.UserSecret;
+            }
+
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -134,26 +150,18 @@ namespace UI_ByteBay
         //METODOS
         private void MostrarFormulario(Form formulario)
         {
-            if (formulario == null) return;
+            if (formulario == null || formulario == formularioActual) return;
 
-            Type tipoFormulario = formulario.GetType();
-            if (formularios.ContainsKey(tipoFormulario))
+            if (formularioActual != null)
             {
-                Form instanciaFormulario = formularios[tipoFormulario];
-                instanciaFormulario.MdiParent = this;
-                OcultarFormularioActual(); // oculta el formulario actual
-                instanciaFormulario.Show();
-                formularioActual = instanciaFormulario;
+                formularioActual.Hide(); // Oculta el formulario actual
             }
-            else
-            {
-                formulario.MdiParent = this;
-                OcultarFormularioActual(); // oculta el formulario actual
-                formulario.Show();
-                formularios.Add(tipoFormulario, formulario);
-                formularioActual = formulario;
-            }
+
+            formulario.MdiParent = this;
+            formulario.Show();
+            formularioActual = formulario;
         }
+
 
         private void OcultarFormularioActual()
         {
